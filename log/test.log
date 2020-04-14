@@ -1,0 +1,535 @@
+  [1m[35m (20.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (23.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (15.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (13.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (11.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (12.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (11.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (13.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (8.9ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (20.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (26.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (15.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (12.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (27.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (11.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (21.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (4.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (11.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (20.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (12.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (16.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (5.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (10.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (10.8ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (11.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (16.9ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (10.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (2.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (3.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (20.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (21.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (19.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (17.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (25.8ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (50.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (3.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (25.8ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (26.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (20.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (22.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (2.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (45.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (70.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (5.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (3.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (18.9ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (18.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.7ms)[0m  [1m[35mBEGIN[0m
+Started POST "/admin/staff_members" for 127.0.0.1 at 2020-04-14 04:39:18 +0000
+Processing by Admin::StaffMembersController#create as HTML
+  Parameters: {"staff_member"=>{"email"=>"member1@example.com", "famiyl_name"=>"山田", "given_name"=>"太郎", "family_name_kana"=>"ヤマダ", "given_name_kana"=>"タロウ", "password"=>"[FILTERED]", "start_date"=>"2020-04-13", "end_date"=>nil, "suspended"=>"false"}, "host"=>"baukis2.example.com"}
+[31mUnpermitted parameter: :given_name[0m
+  [1m[35m (1.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStaffMember Create (7.7ms)[0m  [1m[32mINSERT INTO "staff_members" ("email", "famiyl_name", "family_name_kana", "given_name_kana", "hashed_password", "start_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["email", "member1@example.com"], ["famiyl_name", "山田"], ["family_name_kana", "ヤマダ"], ["given_name_kana", "タロウ"], ["hashed_password", "$2a$12$y6dFhSUkoNfA3sxwEf80s.6Y4Ry6e69/vX.uCRF1XEe3em63cPSyq"], ["start_date", "2020-04-13"], ["created_at", "2020-04-14 04:39:21.173949"], ["updated_at", "2020-04-14 04:39:21.173949"]]
+  [1m[35m (6.9ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 1242ms (ActiveRecord: 113.3ms | Allocations: 9282)
+  [1m[35m (8.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (2.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.8ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStaffMember Create (633.1ms)[0m  [1m[32mINSERT INTO "staff_members" ("email", "famiyl_name", "given_name", "family_name_kana", "given_name_kana", "hashed_password", "start_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "member3@example.com"], ["famiyl_name", "山田"], ["given_name", "太郎"], ["family_name_kana", "ヤマダ"], ["given_name_kana", "タロウ"], ["hashed_password", "$2a$12$pWQ4TPgbEewcZSpCeA4.LuEvhRu/uU7k9EudyixPs7gvTxUVHr2i2"], ["start_date", "2020-04-13"], ["created_at", "2020-04-14 04:39:22.493227"], ["updated_at", "2020-04-14 04:39:22.493227"]]
+  [1m[35m (1.7ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/admin/staff_members.2" for 127.0.0.1 at 2020-04-14 04:39:23 +0000
+  [1m[35m (5.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (10.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.9ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStaffMember Create (3.5ms)[0m  [1m[32mINSERT INTO "staff_members" ("email", "famiyl_name", "given_name", "family_name_kana", "given_name_kana", "hashed_password", "start_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "member5@example.com"], ["famiyl_name", "山田"], ["given_name", "太郎"], ["family_name_kana", "ヤマダ"], ["given_name_kana", "タロウ"], ["hashed_password", "$2a$12$Rzz1apQZKNcSxZwsoIjYIOyBcZoMGm9wwYLuZS3E3zKY/GJRYTjJu"], ["start_date", "2020-04-13"], ["created_at", "2020-04-14 04:39:26.171569"], ["updated_at", "2020-04-14 04:39:26.171569"]]
+  [1m[35m (2.6ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/admin/staff_members.3" for 127.0.0.1 at 2020-04-14 04:39:26 +0000
+  [1m[35m (1.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (14.9ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (17.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+Started POST "/admin/staff_members" for 127.0.0.1 at 2020-04-14 04:42:44 +0000
+Processing by Admin::StaffMembersController#create as HTML
+  Parameters: {"staff_member"=>{"email"=>"member1@example.com", "famiyl_name"=>"山田", "given_name"=>"太郎", "family_name_kana"=>"ヤマダ", "given_name_kana"=>"タロウ", "password"=>"[FILTERED]", "start_date"=>"2020-04-13", "end_date"=>nil, "suspended"=>"false"}, "host"=>"baukis2.example.com"}
+[31mUnpermitted parameter: :given_name[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStaffMember Create (8.3ms)[0m  [1m[32mINSERT INTO "staff_members" ("email", "famiyl_name", "family_name_kana", "given_name_kana", "hashed_password", "start_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["email", "member1@example.com"], ["famiyl_name", "山田"], ["family_name_kana", "ヤマダ"], ["given_name_kana", "タロウ"], ["hashed_password", "$2a$12$GKwdgdMqLn1ZUWyQhn0Ic.DiNe/O.lfT/PnL1lXmvpdj11Cy.AGTa"], ["start_date", "2020-04-13"], ["created_at", "2020-04-14 04:42:45.931611"], ["updated_at", "2020-04-14 04:42:45.931611"]]
+  [1m[35m (1.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 1225ms (ActiveRecord: 118.4ms | Allocations: 9284)
+  [1m[35m (1.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (8.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (6.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStaffMember Create (9.6ms)[0m  [1m[32mINSERT INTO "staff_members" ("email", "famiyl_name", "given_name", "family_name_kana", "given_name_kana", "hashed_password", "start_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "member3@example.com"], ["famiyl_name", "山田"], ["given_name", "太郎"], ["family_name_kana", "ヤマダ"], ["given_name_kana", "タロウ"], ["hashed_password", "$2a$12$9vVWYGXc.QiLsVdisbIc8uQCExh1w9AtP2cozIffO.d4NiCcU5NMa"], ["start_date", "2020-04-13"], ["created_at", "2020-04-14 04:42:47.009463"], ["updated_at", "2020-04-14 04:42:47.009463"]]
+  [1m[35m (0.8ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/admin/staff_members.5" for 127.0.0.1 at 2020-04-14 04:42:47 +0000
+  [1m[35m (0.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStaffMember Create (2.7ms)[0m  [1m[32mINSERT INTO "staff_members" ("email", "famiyl_name", "given_name", "family_name_kana", "given_name_kana", "hashed_password", "start_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "member5@example.com"], ["famiyl_name", "山田"], ["given_name", "太郎"], ["family_name_kana", "ヤマダ"], ["given_name_kana", "タロウ"], ["hashed_password", "$2a$12$ExeGsSqRMM6LyVVHv7gfw.4KufTgp1I.BBoggDZSETA43RFd/xTIa"], ["start_date", "2020-04-13"], ["created_at", "2020-04-14 04:42:48.894706"], ["updated_at", "2020-04-14 04:42:48.894706"]]
+  [1m[35m (2.6ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/admin/staff_members.6" for 127.0.0.1 at 2020-04-14 04:42:49 +0000
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (11.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (17.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/admin/staff_members" for 127.0.0.1 at 2020-04-14 04:45:22 +0000
+Processing by Admin::StaffMembersController#create as HTML
+  Parameters: {"staff_member"=>{"email"=>"member1@example.com", "famiyl_name"=>"山田", "given_name"=>"太郎", "family_name_kana"=>"ヤマダ", "given_name_kana"=>"タロウ", "password"=>"[FILTERED]", "start_date"=>"2020-04-13", "end_date"=>nil, "suspended"=>"false"}, "host"=>"baukis2.example.com"}
+[31mUnpermitted parameter: :given_name[0m
+  [1m[35m (0.9ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStaffMember Create (3.4ms)[0m  [1m[32mINSERT INTO "staff_members" ("email", "famiyl_name", "family_name_kana", "given_name_kana", "hashed_password", "start_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["email", "member1@example.com"], ["famiyl_name", "山田"], ["family_name_kana", "ヤマダ"], ["given_name_kana", "タロウ"], ["hashed_password", "$2a$12$d4mPtwvA7NoiO/1Vj69aneuMMeXIGuJyXfbrHcEHXyqsL.tcEr7oa"], ["start_date", "2020-04-13"], ["created_at", "2020-04-14 04:45:23.634406"], ["updated_at", "2020-04-14 04:45:23.634406"]]
+  [1m[35m (1.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 597ms (ActiveRecord: 87.9ms | Allocations: 9282)
+  [1m[35m (0.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStaffMember Create (11.3ms)[0m  [1m[32mINSERT INTO "staff_members" ("email", "famiyl_name", "given_name", "family_name_kana", "given_name_kana", "hashed_password", "start_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "member3@example.com"], ["famiyl_name", "山田"], ["given_name", "太郎"], ["family_name_kana", "ヤマダ"], ["given_name_kana", "タロウ"], ["hashed_password", "$2a$12$9Fnpz3A8XMOAPT7Do7zK5Oo65y08M7HyQQM8ui/Hub3m5ZoHSB9h2"], ["start_date", "2020-04-13"], ["created_at", "2020-04-14 04:45:24.343457"], ["updated_at", "2020-04-14 04:45:24.343457"]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/admin/staff_members.8" for 127.0.0.1 at 2020-04-14 04:45:24 +0000
+  [1m[35m (1.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStaffMember Create (1.9ms)[0m  [1m[32mINSERT INTO "staff_members" ("email", "famiyl_name", "given_name", "family_name_kana", "given_name_kana", "hashed_password", "start_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "member5@example.com"], ["famiyl_name", "山田"], ["given_name", "太郎"], ["family_name_kana", "ヤマダ"], ["given_name_kana", "タロウ"], ["hashed_password", "$2a$12$S.XFgKzIuDHhbic..3o6puo9ltmz0vx8HTl.g8MBi/T.i15/Y3vNi"], ["start_date", "2020-04-13"], ["created_at", "2020-04-14 04:45:25.593173"], ["updated_at", "2020-04-14 04:45:25.593173"]]
+  [1m[35m (0.8ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/admin/staff_members.9" for 127.0.0.1 at 2020-04-14 04:45:26 +0000
+  [1m[35m (0.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (8.8ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (11.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.9ms)[0m  [1m[35mBEGIN[0m
+Started POST "/admin/staff_members" for 127.0.0.1 at 2020-04-14 04:47:38 +0000
+Processing by Admin::StaffMembersController#create as HTML
+  Parameters: {"staff_member"=>{"email"=>"member1@example.com", "famiyl_name"=>"山田", "given_name"=>"太郎", "family_name_kana"=>"ヤマダ", "given_name_kana"=>"タロウ", "password"=>"[FILTERED]", "start_date"=>"2020-04-13", "end_date"=>nil, "suspended"=>"false"}, "host"=>"baukis2.example.com"}
+[31mUnpermitted parameter: :given_name[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStaffMember Create (1.9ms)[0m  [1m[32mINSERT INTO "staff_members" ("email", "famiyl_name", "family_name_kana", "given_name_kana", "hashed_password", "start_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["email", "member1@example.com"], ["famiyl_name", "山田"], ["family_name_kana", "ヤマダ"], ["given_name_kana", "タロウ"], ["hashed_password", "$2a$12$JcQlEifuafvodSYXfL3dpO6d2OynWe.Jahwkj.X0bnlMunDGSpNEe"], ["start_date", "2020-04-13"], ["created_at", "2020-04-14 04:47:40.243187"], ["updated_at", "2020-04-14 04:47:40.243187"]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 750ms (ActiveRecord: 83.8ms | Allocations: 9282)
+  [1m[35m (1.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Started POST "/admin/staff_members" for 127.0.0.1 at 2020-04-14 04:47:40 +0000
+Processing by Admin::StaffMembersController#create as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 269)
+  [1m[35m (0.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStaffMember Create (9.8ms)[0m  [1m[32mINSERT INTO "staff_members" ("email", "famiyl_name", "given_name", "family_name_kana", "given_name_kana", "hashed_password", "start_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "member3@example.com"], ["famiyl_name", "山田"], ["given_name", "太郎"], ["family_name_kana", "ヤマダ"], ["given_name_kana", "タロウ"], ["hashed_password", "$2a$12$IuRdEQuKXd0Wk11LYBVqtekCogP8NUq8IEnNbLWCDhx.nXhl1J.A."], ["start_date", "2020-04-13"], ["created_at", "2020-04-14 04:47:41.799254"], ["updated_at", "2020-04-14 04:47:41.799254"]]
+  [1m[35m (1.6ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/admin/staff_members.11" for 127.0.0.1 at 2020-04-14 04:47:41 +0000
+  [1m[35m (1.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStaffMember Create (1.3ms)[0m  [1m[32mINSERT INTO "staff_members" ("email", "famiyl_name", "given_name", "family_name_kana", "given_name_kana", "hashed_password", "start_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "member5@example.com"], ["famiyl_name", "山田"], ["given_name", "太郎"], ["family_name_kana", "ヤマダ"], ["given_name_kana", "タロウ"], ["hashed_password", "$2a$12$2X5.nM3Cjt/VZ7i4nxj.e.bGarqObJYvqFwZfJzqstZKfw9x1Qia."], ["start_date", "2020-04-13"], ["created_at", "2020-04-14 04:47:42.818916"], ["updated_at", "2020-04-14 04:47:42.818916"]]
+  [1m[35m (0.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/admin/staff_members.12" for 127.0.0.1 at 2020-04-14 04:47:43 +0000
+  [1m[35m (3.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (8.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (11.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+Started POST "/admin/staff_members" for 127.0.0.1 at 2020-04-14 04:50:10 +0000
+Processing by Admin::StaffMembersController#create as HTML
+  Parameters: {"staff_member"=>{"email"=>"member1@example.com", "famiyl_name"=>"山田", "given_name"=>"太郎", "family_name_kana"=>"ヤマダ", "given_name_kana"=>"タロウ", "password"=>"[FILTERED]", "start_date"=>"2020-04-13", "end_date"=>nil, "suspended"=>"false"}, "host"=>"baukis2.example.com"}
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStaffMember Create (9.3ms)[0m  [1m[32mINSERT INTO "staff_members" ("email", "famiyl_name", "given_name", "family_name_kana", "given_name_kana", "hashed_password", "start_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "member1@example.com"], ["famiyl_name", "山田"], ["given_name", "太郎"], ["family_name_kana", "ヤマダ"], ["given_name_kana", "タロウ"], ["hashed_password", "$2a$12$idlnY9lX8A3uhlW.XfUBuOEvlHMty2lcJwZylCGVjvnbBN0PbaIFe"], ["start_date", "2020-04-13"], ["created_at", "2020-04-14 04:50:11.589157"], ["updated_at", "2020-04-14 04:50:11.589157"]]
+  [1m[35m (1.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://baukis2.example.com/admin/staff_members
+Completed 302 Found in 601ms (ActiveRecord: 89.9ms | Allocations: 9273)
+  [1m[35m (6.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/admin/staff_members" for 127.0.0.1 at 2020-04-14 04:50:12 +0000
+Processing by Admin::StaffMembersController#create as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 274)
+  [1m[35m (0.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (6.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStaffMember Create (1.3ms)[0m  [1m[32mINSERT INTO "staff_members" ("email", "famiyl_name", "given_name", "family_name_kana", "given_name_kana", "hashed_password", "start_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "member3@example.com"], ["famiyl_name", "山田"], ["given_name", "太郎"], ["family_name_kana", "ヤマダ"], ["given_name_kana", "タロウ"], ["hashed_password", "$2a$12$nspiDzZkKj3wE7YAsyAJEO/qzY3r.AKyKzcwhdosZ4xJqRx3jM6Cq"], ["start_date", "2020-04-13"], ["created_at", "2020-04-14 04:50:13.072505"], ["updated_at", "2020-04-14 04:50:13.072505"]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/admin/staff_members.14" for 127.0.0.1 at 2020-04-14 04:50:13 +0000
+  [1m[35m (0.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.7ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStaffMember Create (1.3ms)[0m  [1m[32mINSERT INTO "staff_members" ("email", "famiyl_name", "given_name", "family_name_kana", "given_name_kana", "hashed_password", "start_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "member5@example.com"], ["famiyl_name", "山田"], ["given_name", "太郎"], ["family_name_kana", "ヤマダ"], ["given_name_kana", "タロウ"], ["hashed_password", "$2a$12$dbefQVCabL54mqwgzriFreAZYosIysD7j3YHEpjXDPcO88uiVm7Hu"], ["start_date", "2020-04-13"], ["created_at", "2020-04-14 04:50:14.295374"], ["updated_at", "2020-04-14 04:50:14.295374"]]
+  [1m[35m (1.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/admin/staff_members.15" for 127.0.0.1 at 2020-04-14 04:50:14 +0000
+  [1m[35m (0.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (11.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (16.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+Started POST "/admin/staff_members" for 127.0.0.1 at 2020-04-14 04:57:01 +0000
+Processing by Admin::StaffMembersController#create as HTML
+  Parameters: {"staff_member"=>{"email"=>"member1@example.com", "famiyl_name"=>"山田", "given_name"=>"太郎", "family_name_kana"=>"ヤマダ", "given_name_kana"=>"タロウ", "password"=>"[FILTERED]", "start_date"=>"2020-04-13", "end_date"=>nil, "suspended"=>"false"}, "host"=>"baukis2.example.com"}
+  [1m[35m (1.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStaffMember Create (13.2ms)[0m  [1m[32mINSERT INTO "staff_members" ("email", "famiyl_name", "given_name", "family_name_kana", "given_name_kana", "hashed_password", "start_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "member1@example.com"], ["famiyl_name", "山田"], ["given_name", "太郎"], ["family_name_kana", "ヤマダ"], ["given_name_kana", "タロウ"], ["hashed_password", "$2a$12$PawpH8RFDrsOOzHMR5p2suayzIOdTLkLS3UKE73MAjzAbu7CL.hbW"], ["start_date", "2020-04-13"], ["created_at", "2020-04-14 04:57:02.552861"], ["updated_at", "2020-04-14 04:57:02.552861"]]
+  [1m[35m (0.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://baukis2.example.com/admin/staff_members
+Completed 302 Found in 624ms (ActiveRecord: 84.8ms | Allocations: 9273)
+  [1m[35m (1.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+Started POST "/admin/staff_members" for 127.0.0.1 at 2020-04-14 04:57:02 +0000
+Processing by Admin::StaffMembersController#create as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+Completed 400 Bad Request in 3ms (ActiveRecord: 0.0ms | Allocations: 274)
+  [1m[35m (1.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStaffMember Create (0.6ms)[0m  [1m[32mINSERT INTO "staff_members" ("email", "famiyl_name", "given_name", "family_name_kana", "given_name_kana", "hashed_password", "start_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "member3@example.com"], ["famiyl_name", "山田"], ["given_name", "太郎"], ["family_name_kana", "ヤマダ"], ["given_name_kana", "タロウ"], ["hashed_password", "$2a$12$Wit8PCVZH58nYzTCkZBMQOrfaXLwOrSGr2IB0Mea8aknQ3M5Emfeu"], ["start_date", "2020-04-13"], ["created_at", "2020-04-14 04:57:03.773213"], ["updated_at", "2020-04-14 04:57:03.773213"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/admin/staff_members.17" for 127.0.0.1 at 2020-04-14 04:57:04 +0000
+  [1m[35m (5.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.8ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStaffMember Create (2.0ms)[0m  [1m[32mINSERT INTO "staff_members" ("email", "famiyl_name", "given_name", "family_name_kana", "given_name_kana", "hashed_password", "start_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "member5@example.com"], ["famiyl_name", "山田"], ["given_name", "太郎"], ["family_name_kana", "ヤマダ"], ["given_name_kana", "タロウ"], ["hashed_password", "$2a$12$cJ54V3HuQY65QleQxFKXP.fR4h8jLKHnLRuf6WV5QrcBZ6lIaARLe"], ["start_date", "2020-04-13"], ["created_at", "2020-04-14 04:57:04.875247"], ["updated_at", "2020-04-14 04:57:04.875247"]]
+  [1m[35m (0.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/admin/staff_members.18" for 127.0.0.1 at 2020-04-14 04:57:05 +0000
+  [1m[35m (0.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (7.8ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (13.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+Started POST "/admin/staff_members" for 127.0.0.1 at 2020-04-14 04:59:34 +0000
+Processing by Admin::StaffMembersController#create as HTML
+  Parameters: {"staff_member"=>{"email"=>"member1@example.com", "famiyl_name"=>"山田", "given_name"=>"太郎", "family_name_kana"=>"ヤマダ", "given_name_kana"=>"タロウ", "password"=>"[FILTERED]", "start_date"=>"2020-04-13", "end_date"=>nil, "suspended"=>"false"}, "host"=>"baukis2.example.com"}
+  [1m[35m (0.8ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStaffMember Create (14.8ms)[0m  [1m[32mINSERT INTO "staff_members" ("email", "famiyl_name", "given_name", "family_name_kana", "given_name_kana", "hashed_password", "start_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "member1@example.com"], ["famiyl_name", "山田"], ["given_name", "太郎"], ["family_name_kana", "ヤマダ"], ["given_name_kana", "タロウ"], ["hashed_password", "$2a$12$XrZlY4gC52s3yr7.Me523OH3loxwR3UD885AOOHGXn.PlumTIuBCu"], ["start_date", "2020-04-13"], ["created_at", "2020-04-14 04:59:35.577760"], ["updated_at", "2020-04-14 04:59:35.577760"]]
+  [1m[35m (2.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://baukis2.example.com/admin/staff_members
+Completed 302 Found in 758ms (ActiveRecord: 159.0ms | Allocations: 9273)
+  [1m[35m (1.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+Started POST "/admin/staff_members" for 127.0.0.1 at 2020-04-14 04:59:36 +0000
+Processing by Admin::StaffMembersController#create as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 274)
+  [1m[35m (0.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.8ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStaffMember Create (1.1ms)[0m  [1m[32mINSERT INTO "staff_members" ("email", "famiyl_name", "given_name", "family_name_kana", "given_name_kana", "hashed_password", "start_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "member3@example.com"], ["famiyl_name", "山田"], ["given_name", "太郎"], ["family_name_kana", "ヤマダ"], ["given_name_kana", "タロウ"], ["hashed_password", "$2a$12$JCNZd1yrR5glKpzoBr17feCScu1UaGHtRhAfVwoXJAhWg.3aEifEG"], ["start_date", "2020-04-13"], ["created_at", "2020-04-14 04:59:36.836397"], ["updated_at", "2020-04-14 04:59:36.836397"]]
+  [1m[35m (1.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/admin/staff_members.20" for 127.0.0.1 at 2020-04-14 04:59:37 +0000
+  [1m[35m (0.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (3.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (13.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStaffMember Create (1.4ms)[0m  [1m[32mINSERT INTO "staff_members" ("email", "famiyl_name", "given_name", "family_name_kana", "given_name_kana", "hashed_password", "start_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "member5@example.com"], ["famiyl_name", "山田"], ["given_name", "太郎"], ["family_name_kana", "ヤマダ"], ["given_name_kana", "タロウ"], ["hashed_password", "$2a$12$tcc4PuDHrafGPMRfZ68YwOQUuwt9Sc.LOqnhltXMsN39EAd7fvTCy"], ["start_date", "2020-04-13"], ["created_at", "2020-04-14 04:59:37.981352"], ["updated_at", "2020-04-14 04:59:37.981352"]]
+  [1m[35m (0.8ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/admin/staff_members.21" for 127.0.0.1 at 2020-04-14 04:59:38 +0000
+  [1m[35m (1.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (29.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (26.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.9ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStaffMember Create (11.1ms)[0m  [1m[32mINSERT INTO "staff_members" ("email", "famiyl_name", "given_name", "family_name_kana", "given_name_kana", "hashed_password", "start_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "member2@example.com"], ["famiyl_name", "山田"], ["given_name", "太郎"], ["family_name_kana", "ヤマダ"], ["given_name_kana", "タロウ"], ["hashed_password", "$2a$12$kOlBqUCV0.iTmsxSlbee1ujDe1X9se0mmF1zJHqM7W2j/Czg.PLJe"], ["start_date", "2020-04-13"], ["created_at", "2020-04-14 06:49:31.584397"], ["updated_at", "2020-04-14 06:49:31.584397"]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/account" for 127.0.0.1 at 2020-04-14 06:49:32 +0000
+Processing by Staff::AccountsController#update as HTML
+  Parameters: {"id"=>"22", "staff_member"=>{"email"=>"test@example.com", "famiyl_name"=>"山田", "given_name"=>"太郎", "family_name_kana"=>"ヤマダ", "given_name_kana"=>"タロウ", "password"=>"[FILTERED]", "start_date"=>"2020-04-13", "end_date"=>nil, "suspended"=>"false"}, "host"=>"baukis2.example.com"}
+[31mUnpermitted parameters: :password, :start_date, :end_date, :suspended[0m
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 0.0ms | Allocations: 878)
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (5.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStaffMember Create (1.3ms)[0m  [1m[32mINSERT INTO "staff_members" ("email", "famiyl_name", "given_name", "family_name_kana", "given_name_kana", "hashed_password", "start_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "member4@example.com"], ["famiyl_name", "山田"], ["given_name", "太郎"], ["family_name_kana", "ヤマダ"], ["given_name_kana", "タロウ"], ["hashed_password", "$2a$12$OTeYOnaj8jxYHec8NDo/CeVaA1p.j3CuyyT2rGIjbDu8N62ruC2qi"], ["start_date", "2020-04-13"], ["created_at", "2020-04-14 06:49:33.567695"], ["updated_at", "2020-04-14 06:49:33.567695"]]
+  [1m[35m (0.8ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/account" for 127.0.0.1 at 2020-04-14 06:49:34 +0000
+Processing by Staff::AccountsController#update as HTML
+  Parameters: {"id"=>"23", "staff_member"=>{"email"=>"member3@example.com", "famiyl_name"=>"山田", "given_name"=>"太郎", "family_name_kana"=>"ヤマダ", "given_name_kana"=>"タロウ", "password"=>"[FILTERED]", "start_date"=>"2020-04-13", "end_date"=>"2020-04-15", "suspended"=>"false"}, "host"=>"baukis2.example.com"}
+[31mUnpermitted parameters: :password, :start_date, :end_date, :suspended[0m
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 775)
+  [1m[35m (2.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (12.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (13.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStaffMember Create (8.4ms)[0m  [1m[32mINSERT INTO "staff_members" ("email", "famiyl_name", "given_name", "family_name_kana", "given_name_kana", "hashed_password", "start_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "member1@example.com"], ["famiyl_name", "山田"], ["given_name", "太郎"], ["family_name_kana", "ヤマダ"], ["given_name_kana", "タロウ"], ["hashed_password", "$2a$12$WAygZLmAxVO2CnyRvm3Td.15TAogCtytR/hCOnoNTc.KUJPuPWfPi"], ["start_date", "2020-04-13"], ["created_at", "2020-04-14 06:57:39.215725"], ["updated_at", "2020-04-14 06:57:39.215725"]]
+  [1m[35m (0.6ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/session" for 127.0.0.1 at 2020-04-14 06:57:40 +0000
+Processing by Staff::SessionsController#create as HTML
+  Parameters: {"staff_login_form"=>{"email"=>"member1@example.com", "password"=>"[FILTERED]"}, "host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (22.9ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE (LOWER(email) = 'member1@example.com') LIMIT $1[0m  [["LIMIT", 1]]
+Redirected to http://baukis2.example.com/
+Completed 302 Found in 692ms (ActiveRecord: 22.9ms | Allocations: 1247)
+Started PATCH "/account" for 127.0.0.1 at 2020-04-14 06:57:42 +0000
+Processing by Staff::AccountsController#update as HTML
+  Parameters: {"id"=>"24", "staff_member"=>{"email"=>"test@example.com", "famiyl_name"=>"山田", "given_name"=>"太郎", "family_name_kana"=>"ヤマダ", "given_name_kana"=>"タロウ", "password"=>"[FILTERED]", "start_date"=>"2020-04-13", "end_date"=>nil, "suspended"=>"false"}, "host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (8.9ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+[31mUnpermitted parameters: :password, :start_date, :end_date, :suspended[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStaffMember Update (8.0ms)[0m  [1m[33mUPDATE "staff_members" SET "email" = $1, "updated_at" = $2 WHERE "staff_members"."id" = $3[0m  [["email", "test@example.com"], ["updated_at", "2020-04-14 06:57:42.875660"], ["id", 24]]
+  [1m[35m (0.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://baukis2.example.com/account
+Completed 302 Found in 34ms (ActiveRecord: 18.6ms | Allocations: 1231)
+  [1m[36mStaffMember Load (8.3ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStaffMember Create (1.5ms)[0m  [1m[32mINSERT INTO "staff_members" ("email", "famiyl_name", "given_name", "family_name_kana", "given_name_kana", "hashed_password", "start_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "member3@example.com"], ["famiyl_name", "山田"], ["given_name", "太郎"], ["family_name_kana", "ヤマダ"], ["given_name_kana", "タロウ"], ["hashed_password", "$2a$12$P5E0mtydU6zGeDoquqSj0uyG6xOcRfFmLboCYkV/fTtk6JyFb0WiG"], ["start_date", "2020-04-13"], ["created_at", "2020-04-14 06:57:43.402470"], ["updated_at", "2020-04-14 06:57:43.402470"]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/session" for 127.0.0.1 at 2020-04-14 06:57:43 +0000
+Processing by Staff::SessionsController#create as HTML
+  Parameters: {"staff_login_form"=>{"email"=>"member3@example.com", "password"=>"[FILTERED]"}, "host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (5.4ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE (LOWER(email) = 'member3@example.com') LIMIT $1[0m  [["LIMIT", 1]]
+Redirected to http://baukis2.example.com/
+Completed 302 Found in 444ms (ActiveRecord: 5.4ms | Allocations: 559)
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStaffMember Create (1.4ms)[0m  [1m[32mINSERT INTO "staff_members" ("email", "famiyl_name", "given_name", "family_name_kana", "given_name_kana", "hashed_password", "start_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "member4@example.com"], ["famiyl_name", "山田"], ["given_name", "太郎"], ["family_name_kana", "ヤマダ"], ["given_name_kana", "タロウ"], ["hashed_password", "$2a$12$FEoW3A0sqevnA6E4Epr12OzBqBTNY6L0TGmRuQo0GtGBy7QkiSl6S"], ["start_date", "2020-04-13"], ["created_at", "2020-04-14 06:57:45.169844"], ["updated_at", "2020-04-14 06:57:45.169844"]]
+  [1m[35m (0.8ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/session" for 127.0.0.1 at 2020-04-14 06:57:45 +0000
+Processing by Staff::SessionsController#create as HTML
+  Parameters: {"staff_login_form"=>{"email"=>"member4@example.com", "password"=>"[FILTERED]"}, "host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (7.6ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE (LOWER(email) = 'member4@example.com') LIMIT $1[0m  [["LIMIT", 1]]
+Redirected to http://baukis2.example.com/
+Completed 302 Found in 448ms (ActiveRecord: 7.6ms | Allocations: 559)
+Started PATCH "/account" for 127.0.0.1 at 2020-04-14 06:57:47 +0000
+Processing by Staff::AccountsController#update as HTML
+  Parameters: {"id"=>"26", "staff_member"=>{"email"=>"member5@example.com", "famiyl_name"=>"山田", "given_name"=>"太郎", "family_name_kana"=>"ヤマダ", "given_name_kana"=>"タロウ", "password"=>"[FILTERED]", "start_date"=>"2020-04-13", "end_date"=>"2020-04-15", "suspended"=>"false"}, "host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (19.2ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+[31mUnpermitted parameters: :password, :start_date, :end_date, :suspended[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStaffMember Update (7.2ms)[0m  [1m[33mUPDATE "staff_members" SET "email" = $1, "updated_at" = $2 WHERE "staff_members"."id" = $3[0m  [["email", "member5@example.com"], ["updated_at", "2020-04-14 06:57:47.593747"], ["id", 26]]
+  [1m[35m (0.5ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://baukis2.example.com/account
+Completed 302 Found in 44ms (ActiveRecord: 27.3ms | Allocations: 1019)
+  [1m[35m (0.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (23.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (18.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (4.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.8ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStaffMember Create (6.9ms)[0m  [1m[32mINSERT INTO "staff_members" ("email", "famiyl_name", "given_name", "family_name_kana", "given_name_kana", "hashed_password", "start_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "member1@example.com"], ["famiyl_name", "山田"], ["given_name", "太郎"], ["family_name_kana", "ヤマダ"], ["given_name_kana", "タロウ"], ["hashed_password", "$2a$12$2Wj4GLmieuqjU5whRw7/LO55lnFVBzYhAc./A/Hgjx9Kf2tzyJc8e"], ["start_date", "2020-04-13"], ["created_at", "2020-04-14 07:13:45.755380"], ["updated_at", "2020-04-14 07:13:45.755380"]]
+  [1m[35m (0.8ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/session" for 127.0.0.1 at 2020-04-14 07:13:46 +0000
+Processing by Staff::SessionsController#create as HTML
+  Parameters: {"staff_login_form"=>{"email"=>"member1@example.com", "password"=>"[FILTERED]"}, "host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (16.7ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE (LOWER(email) = 'member1@example.com') LIMIT $1[0m  [["LIMIT", 1]]
+Redirected to http://baukis2.example.com/
+Completed 302 Found in 656ms (ActiveRecord: 16.7ms | Allocations: 1245)
+Started PATCH "/account" for 127.0.0.1 at 2020-04-14 07:13:48 +0000
+Processing by Staff::AccountsController#update as HTML
+  Parameters: {"id"=>"27", "staff_member"=>{"email"=>"test@example.com", "famiyl_name"=>"山田", "given_name"=>"太郎", "family_name_kana"=>"ヤマダ", "given_name_kana"=>"タロウ", "password"=>"[FILTERED]", "start_date"=>"2020-04-13", "end_date"=>nil, "suspended"=>"false"}, "host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (8.4ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[31mUnpermitted parameters: :password, :start_date, :end_date, :suspended[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStaffMember Update (6.0ms)[0m  [1m[33mUPDATE "staff_members" SET "email" = $1, "updated_at" = $2 WHERE "staff_members"."id" = $3[0m  [["email", "test@example.com"], ["updated_at", "2020-04-14 07:13:48.822520"], ["id", 27]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://baukis2.example.com/account
+Completed 302 Found in 34ms (ActiveRecord: 16.5ms | Allocations: 1237)
+  [1m[36mStaffMember Load (22.6ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[35m (0.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (2.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStaffMember Create (0.8ms)[0m  [1m[32mINSERT INTO "staff_members" ("email", "famiyl_name", "given_name", "family_name_kana", "given_name_kana", "hashed_password", "start_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "member3@example.com"], ["famiyl_name", "山田"], ["given_name", "太郎"], ["family_name_kana", "ヤマダ"], ["given_name_kana", "タロウ"], ["hashed_password", "$2a$12$3IVLKZ//LeumdUWT3KrAseaiqwgncaaLC72sV40PIYpUbTQi9LPwi"], ["start_date", "2020-04-13"], ["created_at", "2020-04-14 07:13:49.401792"], ["updated_at", "2020-04-14 07:13:49.401792"]]
+  [1m[35m (0.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/session" for 127.0.0.1 at 2020-04-14 07:13:49 +0000
+Processing by Staff::SessionsController#create as HTML
+  Parameters: {"staff_login_form"=>{"email"=>"member3@example.com", "password"=>"[FILTERED]"}, "host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (3.6ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE (LOWER(email) = 'member3@example.com') LIMIT $1[0m  [["LIMIT", 1]]
+Redirected to http://baukis2.example.com/
+Completed 302 Found in 441ms (ActiveRecord: 3.6ms | Allocations: 559)
+  [1m[35m (1.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStaffMember Create (0.8ms)[0m  [1m[32mINSERT INTO "staff_members" ("email", "famiyl_name", "given_name", "family_name_kana", "given_name_kana", "hashed_password", "start_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "member4@example.com"], ["famiyl_name", "山田"], ["given_name", "太郎"], ["family_name_kana", "ヤマダ"], ["given_name_kana", "タロウ"], ["hashed_password", "$2a$12$4bHn0pqTPwBul4J/IVrGQueWJDvQBtMYMHPNYOGQkgyzpT6zWNosG"], ["start_date", "2020-04-13"], ["created_at", "2020-04-14 07:13:51.145369"], ["updated_at", "2020-04-14 07:13:51.145369"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/session" for 127.0.0.1 at 2020-04-14 07:13:51 +0000
+Processing by Staff::SessionsController#create as HTML
+  Parameters: {"staff_login_form"=>{"email"=>"member4@example.com", "password"=>"[FILTERED]"}, "host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (6.5ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE (LOWER(email) = 'member4@example.com') LIMIT $1[0m  [["LIMIT", 1]]
+Redirected to http://baukis2.example.com/
+Completed 302 Found in 478ms (ActiveRecord: 6.5ms | Allocations: 559)
+Started PATCH "/account" for 127.0.0.1 at 2020-04-14 07:13:52 +0000
+Processing by Staff::AccountsController#update as HTML
+  Parameters: {"id"=>"29", "staff_member"=>{"email"=>"member5@example.com", "famiyl_name"=>"山田", "given_name"=>"太郎", "family_name_kana"=>"ヤマダ", "given_name_kana"=>"タロウ", "password"=>"[FILTERED]", "start_date"=>"2020-04-13", "end_date"=>"2020-04-15", "suspended"=>"false"}, "host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (3.8ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+[31mUnpermitted parameters: :password, :start_date, :end_date, :suspended[0m
+  [1m[35m (1.7ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStaffMember Update (6.9ms)[0m  [1m[33mUPDATE "staff_members" SET "email" = $1, "updated_at" = $2 WHERE "staff_members"."id" = $3[0m  [["email", "member5@example.com"], ["updated_at", "2020-04-14 07:13:52.902590"], ["id", 29]]
+  [1m[35m (1.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://baukis2.example.com/account
+Completed 302 Found in 28ms (ActiveRecord: 13.5ms | Allocations: 1039)
+  [1m[35m (0.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (7.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (13.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStaffMember Create (11.9ms)[0m  [1m[32mINSERT INTO "staff_members" ("email", "famiyl_name", "given_name", "family_name_kana", "given_name_kana", "hashed_password", "start_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "member1@example.com"], ["famiyl_name", "山田"], ["given_name", "太郎"], ["family_name_kana", "ヤマダ"], ["given_name_kana", "タロウ"], ["hashed_password", "$2a$12$2znHoKF6QQw6dGfJYnB.XuQlS0vRQANKB6UUnZLbnAJtN92lT5GvC"], ["start_date", "2020-04-13"], ["created_at", "2020-04-14 07:14:57.095997"], ["updated_at", "2020-04-14 07:14:57.095997"]]
+  [1m[35m (0.7ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/session" for 127.0.0.1 at 2020-04-14 07:14:57 +0000
+Processing by Staff::SessionsController#create as HTML
+  Parameters: {"staff_login_form"=>{"email"=>"member1@example.com", "password"=>"[FILTERED]"}, "host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (26.3ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE (LOWER(email) = 'member1@example.com') LIMIT $1[0m  [["LIMIT", 1]]
+Redirected to http://baukis2.example.com/
+Completed 302 Found in 597ms (ActiveRecord: 26.3ms | Allocations: 1245)
+Started PATCH "/account" for 127.0.0.1 at 2020-04-14 07:14:59 +0000
+Processing by Staff::AccountsController#update as HTML
+  Parameters: {"id"=>"30", "staff_member"=>{"email"=>"test@example.com", "famiyl_name"=>"山田", "given_name"=>"太郎", "family_name_kana"=>"ヤマダ", "given_name_kana"=>"タロウ", "password"=>"[FILTERED]", "start_date"=>"2020-04-13", "end_date"=>nil, "suspended"=>"false"}, "host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (7.1ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+[31mUnpermitted parameters: :password, :start_date, :end_date, :suspended[0m
+  [1m[35m (0.8ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStaffMember Update (10.2ms)[0m  [1m[33mUPDATE "staff_members" SET "email" = $1, "updated_at" = $2 WHERE "staff_members"."id" = $3[0m  [["email", "test@example.com"], ["updated_at", "2020-04-14 07:14:59.742136"], ["id", 30]]
+  [1m[35m (0.5ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://baukis2.example.com/account
+Completed 302 Found in 34ms (ActiveRecord: 19.5ms | Allocations: 1235)
+  [1m[36mStaffMember Load (5.3ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[35m (1.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStaffMember Create (0.6ms)[0m  [1m[32mINSERT INTO "staff_members" ("email", "famiyl_name", "given_name", "family_name_kana", "given_name_kana", "hashed_password", "start_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "member3@example.com"], ["famiyl_name", "山田"], ["given_name", "太郎"], ["family_name_kana", "ヤマダ"], ["given_name_kana", "タロウ"], ["hashed_password", "$2a$12$c0vYRW/azA4clTXoCiccXu9jDo9LBmUOHfcycjtE01WDbUWJnFyFu"], ["start_date", "2020-04-13"], ["created_at", "2020-04-14 07:15:00.290242"], ["updated_at", "2020-04-14 07:15:00.290242"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/session" for 127.0.0.1 at 2020-04-14 07:15:00 +0000
+Processing by Staff::SessionsController#create as HTML
+  Parameters: {"staff_login_form"=>{"email"=>"member3@example.com", "password"=>"[FILTERED]"}, "host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (8.4ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE (LOWER(email) = 'member3@example.com') LIMIT $1[0m  [["LIMIT", 1]]
+Redirected to http://baukis2.example.com/
+Completed 302 Found in 507ms (ActiveRecord: 8.4ms | Allocations: 559)
+Started PATCH "/account" for 127.0.0.1 at 2020-04-14 07:15:02 +0000
+Processing by Staff::AccountsController#update as HTML
+  Parameters: {"id"=>"31", "host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (4.8ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+Completed 400 Bad Request in 9ms (ActiveRecord: 4.8ms | Allocations: 528)
+  [1m[35m (0.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.8ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStaffMember Create (1.1ms)[0m  [1m[32mINSERT INTO "staff_members" ("email", "famiyl_name", "given_name", "family_name_kana", "given_name_kana", "hashed_password", "start_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "member4@example.com"], ["famiyl_name", "山田"], ["given_name", "太郎"], ["family_name_kana", "ヤマダ"], ["given_name_kana", "タロウ"], ["hashed_password", "$2a$12$oEZDtgC9Co2LZp24sKm4rejTXO6t9UCSYSZJCv.TBMkJrkuA4ciQO"], ["start_date", "2020-04-13"], ["created_at", "2020-04-14 07:15:03.030115"], ["updated_at", "2020-04-14 07:15:03.030115"]]
+  [1m[35m (0.8ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/session" for 127.0.0.1 at 2020-04-14 07:15:03 +0000
+Processing by Staff::SessionsController#create as HTML
+  Parameters: {"staff_login_form"=>{"email"=>"member4@example.com", "password"=>"[FILTERED]"}, "host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (6.4ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE (LOWER(email) = 'member4@example.com') LIMIT $1[0m  [["LIMIT", 1]]
+Redirected to http://baukis2.example.com/
+Completed 302 Found in 475ms (ActiveRecord: 6.4ms | Allocations: 559)
+Started PATCH "/account" for 127.0.0.1 at 2020-04-14 07:15:04 +0000
+Processing by Staff::AccountsController#update as HTML
+  Parameters: {"id"=>"32", "staff_member"=>{"email"=>"member5@example.com", "famiyl_name"=>"山田", "given_name"=>"太郎", "family_name_kana"=>"ヤマダ", "given_name_kana"=>"タロウ", "password"=>"[FILTERED]", "start_date"=>"2020-04-13", "end_date"=>"2020-04-15", "suspended"=>"false"}, "host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (7.2ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+[31mUnpermitted parameters: :password, :start_date, :end_date, :suspended[0m
+  [1m[35m (2.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStaffMember Update (13.8ms)[0m  [1m[33mUPDATE "staff_members" SET "email" = $1, "updated_at" = $2 WHERE "staff_members"."id" = $3[0m  [["email", "member5@example.com"], ["updated_at", "2020-04-14 07:15:04.983778"], ["id", 32]]
+  [1m[35m (1.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://baukis2.example.com/account
+Completed 302 Found in 42ms (ActiveRecord: 24.5ms | Allocations: 1033)
+  [1m[35m (0.9ms)[0m  [1m[31mROLLBACK[0m
