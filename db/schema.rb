@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 2020_04_10_013717) do
 
   create_table "staff_members", force: :cascade do |t|
     t.string "email", null: false
-    t.string "famiyl_name", null: false
+    t.string "family_name", null: false
     t.string "given_name", null: false
     t.string "family_name_kana", null: false
     t.string "given_name_kana", null: false

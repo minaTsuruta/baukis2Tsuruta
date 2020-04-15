@@ -9343,3 +9343,1043 @@ Processing by Staff::TopController#index as HTML
 Completed 200 OK in 1252ms (Views: 1215.6ms | ActiveRecord: 1.4ms | Allocations: 5204)
 
 
+  [1m[35m (16.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (17.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (6.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (5.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (1943.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "baukis2_development"[0m
+  [1m[35m (1689.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "baukis2_test"[0m
+  [1m[35m (11463.6ms)[0m  [1m[35mCREATE DATABASE "baukis2_development" ENCODING = 'unicode'[0m
+  [1m[35m (7749.2ms)[0m  [1m[35mCREATE DATABASE "baukis2_test" ENCODING = 'unicode'[0m
+  [1m[35mSQL (11.4ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (1.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "administrators" CASCADE[0m
+  [1m[35m (319.5ms)[0m  [1m[35mCREATE TABLE "administrators" ("id" bigserial primary key, "email" character varying NOT NULL, "hashed_password" character varying, "suspended" boolean DEFAULT FALSE NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (39.8ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_administrators_on_LOWER_email" ON "administrators"  (lower((email)::text))[0m
+  [1m[35m (0.8ms)[0m  [1m[35mDROP TABLE IF EXISTS "staff_members" CASCADE[0m
+  [1m[35m (59.3ms)[0m  [1m[35mCREATE TABLE "staff_members" ("id" bigserial primary key, "email" character varying NOT NULL, "family_name" character varying NOT NULL, "given_name" character varying NOT NULL, "family_name_kana" character varying NOT NULL, "given_name_kana" character varying NOT NULL, "hashed_password" character varying, "start_date" date NOT NULL, "end_date" date, "suspended" boolean DEFAULT FALSE NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (29.2ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_staff_members_on_LOWER_email" ON "staff_members"  (lower((email)::text))[0m
+  [1m[35m (16.6ms)[0m  [1m[35mCREATE  INDEX  "index_staff_members_on_family_name_kana_and_given_name_kana" ON "staff_members"  ("family_name_kana", "given_name_kana")[0m
+  [1m[35m (53.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (11.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (8.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20200410013717)[0m
+  [1m[35m (2.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20200409064556);
+
+[0m
+  [1m[35m (65.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (12.8ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (11.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-04-15 02:26:08.790025"], ["updated_at", "2020-04-15 02:26:08.790025"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (4.8ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (3.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "21d6834dd982f15b8d09800c3f45dd0479f85e1c"], ["created_at", "2020-04-15 02:26:08.873750"], ["updated_at", "2020-04-15 02:26:08.873750"]]
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35mSQL (14.4ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (1.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "administrators" CASCADE[0m
+  [1m[35m (275.6ms)[0m  [1m[35mCREATE TABLE "administrators" ("id" bigserial primary key, "email" character varying NOT NULL, "hashed_password" character varying, "suspended" boolean DEFAULT FALSE NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (34.0ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_administrators_on_LOWER_email" ON "administrators"  (lower((email)::text))[0m
+  [1m[35m (0.8ms)[0m  [1m[35mDROP TABLE IF EXISTS "staff_members" CASCADE[0m
+  [1m[35m (70.4ms)[0m  [1m[35mCREATE TABLE "staff_members" ("id" bigserial primary key, "email" character varying NOT NULL, "family_name" character varying NOT NULL, "given_name" character varying NOT NULL, "family_name_kana" character varying NOT NULL, "given_name_kana" character varying NOT NULL, "hashed_password" character varying, "start_date" date NOT NULL, "end_date" date, "suspended" boolean DEFAULT FALSE NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (23.3ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_staff_members_on_LOWER_email" ON "staff_members"  (lower((email)::text))[0m
+  [1m[35m (24.4ms)[0m  [1m[35mCREATE  INDEX  "index_staff_members_on_family_name_kana_and_given_name_kana" ON "staff_members"  ("family_name_kana", "given_name_kana")[0m
+  [1m[35m (58.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (23.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (9.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20200410013717)[0m
+  [1m[35m (2.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20200409064556);
+
+[0m
+  [1m[35m (72.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (13.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (9.9ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-04-15 02:26:10.667017"], ["updated_at", "2020-04-15 02:26:10.667017"]]
+  [1m[35m (6.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Update (4.1ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2020-04-15 02:26:10.714727"], ["key", "environment"]]
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (3.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (2.9ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "21d6834dd982f15b8d09800c3f45dd0479f85e1c"], ["created_at", "2020-04-15 02:26:10.761842"], ["updated_at", "2020-04-15 02:26:10.761842"]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (11.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStaffMember Create (32.7ms)[0m  [1m[32mINSERT INTO "staff_members" ("email", "family_name", "given_name", "family_name_kana", "given_name_kana", "hashed_password", "start_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "taro@example.com"], ["family_name", "山田"], ["given_name", "太郎"], ["family_name_kana", "ヤマダ"], ["given_name_kana", "タロウ"], ["hashed_password", "$2a$12$ynZXdrIge2HV2Sh73oWIZ.m9KhTElJX7ywEsGEXRveL93xeL224PW"], ["start_date", "2020-04-15"], ["created_at", "2020-04-15 02:26:12.210313"], ["updated_at", "2020-04-15 02:26:12.210313"]]
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStaffMember Create (1.3ms)[0m  [1m[32mINSERT INTO "staff_members" ("email", "family_name", "given_name", "family_name_kana", "given_name_kana", "hashed_password", "start_date", "end_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["email", "sato.jiro@example.com"], ["family_name", "佐藤"], ["given_name", "二郎"], ["family_name_kana", "サトウ"], ["given_name_kana", "ジロウ"], ["hashed_password", "$2a$12$Eis0fXC3lCHJfkDG6bfeHej.gnvyls737E4xKxXgvKGRswl5zQDKe"], ["start_date", "2020-01-06"], ["end_date", "2020-04-15"], ["created_at", "2020-04-15 02:26:12.728637"], ["updated_at", "2020-04-15 02:26:12.728637"]]
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStaffMember Create (1.0ms)[0m  [1m[32mINSERT INTO "staff_members" ("email", "family_name", "given_name", "family_name_kana", "given_name_kana", "hashed_password", "start_date", "suspended", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["email", "suzuki.saburo@example.com"], ["family_name", "鈴木"], ["given_name", "三郎"], ["family_name_kana", "スズキ"], ["given_name_kana", "サブロウ"], ["hashed_password", "$2a$12$jtXSBlQigMKkVLySMZcBfuw5e5ZeUzBcygV37OtktShywmMYZvCz2"], ["start_date", "2020-01-07"], ["suspended", true], ["created_at", "2020-04-15 02:26:13.232305"], ["updated_at", "2020-04-15 02:26:13.232305"]]
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStaffMember Create (0.9ms)[0m  [1m[32mINSERT INTO "staff_members" ("email", "family_name", "given_name", "family_name_kana", "given_name_kana", "hashed_password", "start_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "takahshi.matsuko@example.com"], ["family_name", "高橋"], ["given_name", "松子"], ["family_name_kana", "タカハシ"], ["given_name_kana", "マツコ"], ["hashed_password", "$2a$12$XdCb1qU2lkM9xTZaTUO.Q.YY3ryhcRLLPA4slFAz.Itjucq/FK.a."], ["start_date", "2020-01-08"], ["created_at", "2020-04-15 02:26:13.754460"], ["updated_at", "2020-04-15 02:26:13.754460"]]
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStaffMember Create (1.1ms)[0m  [1m[32mINSERT INTO "staff_members" ("email", "family_name", "given_name", "family_name_kana", "given_name_kana", "hashed_password", "start_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "tanaka.takeko@example.com"], ["family_name", "田中"], ["given_name", "竹子"], ["family_name_kana", "タナカ"], ["given_name_kana", "タケコ"], ["hashed_password", "$2a$12$3haCt6kTT/liDS7eiGmOseJtWpKEyhG0jiDx0Via...BO6AC8757u"], ["start_date", "2020-01-09"], ["created_at", "2020-04-15 02:26:14.210421"], ["updated_at", "2020-04-15 02:26:14.210421"]]
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStaffMember Create (2.1ms)[0m  [1m[32mINSERT INTO "staff_members" ("email", "family_name", "given_name", "family_name_kana", "given_name_kana", "hashed_password", "start_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "sato.umeko@example.com"], ["family_name", "佐藤"], ["given_name", "梅子"], ["family_name_kana", "サトウ"], ["given_name_kana", "ウメコ"], ["hashed_password", "$2a$12$P8SweK/QgCNAgXeJ/2DojeFN.aVXZit4EtPftqbzopeIXvetFVdP6"], ["start_date", "2020-01-10"], ["created_at", "2020-04-15 02:26:14.682937"], ["updated_at", "2020-04-15 02:26:14.682937"]]
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (4.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStaffMember Create (1.2ms)[0m  [1m[32mINSERT INTO "staff_members" ("email", "family_name", "given_name", "family_name_kana", "given_name_kana", "hashed_password", "start_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "suzuki.jiro@example.com"], ["family_name", "鈴木"], ["given_name", "二郎"], ["family_name_kana", "スズキ"], ["given_name_kana", "ジロウ"], ["hashed_password", "$2a$12$1MEAXBSz/bHmQa8z7m/L0OhtP/Rgpyh.TOerypvM.lB2uwleLkfc2"], ["start_date", "2020-01-11"], ["created_at", "2020-04-15 02:26:15.159974"], ["updated_at", "2020-04-15 02:26:15.159974"]]
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStaffMember Create (1.3ms)[0m  [1m[32mINSERT INTO "staff_members" ("email", "family_name", "given_name", "family_name_kana", "given_name_kana", "hashed_password", "start_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "takahshi.saburo@example.com"], ["family_name", "高橋"], ["given_name", "三郎"], ["family_name_kana", "タカハシ"], ["given_name_kana", "サブロウ"], ["hashed_password", "$2a$12$2AqGfPfBS8xEf9y0wInVU.xgibk4qfWu8SUhJLgJgrqSlt6Qa4w52"], ["start_date", "2020-01-12"], ["created_at", "2020-04-15 02:26:15.632949"], ["updated_at", "2020-04-15 02:26:15.632949"]]
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStaffMember Create (1.2ms)[0m  [1m[32mINSERT INTO "staff_members" ("email", "family_name", "given_name", "family_name_kana", "given_name_kana", "hashed_password", "start_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "tanaka.matsuko@example.com"], ["family_name", "田中"], ["given_name", "松子"], ["family_name_kana", "タナカ"], ["given_name_kana", "マツコ"], ["hashed_password", "$2a$12$AEP.E7kxBYZEY7mDDLtHLestQezXb4X61K.k.Ac3T80ijbm1.8dWO"], ["start_date", "2020-01-13"], ["created_at", "2020-04-15 02:26:16.140478"], ["updated_at", "2020-04-15 02:26:16.140478"]]
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStaffMember Create (1.4ms)[0m  [1m[32mINSERT INTO "staff_members" ("email", "family_name", "given_name", "family_name_kana", "given_name_kana", "hashed_password", "start_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "sato.takeko@example.com"], ["family_name", "佐藤"], ["given_name", "竹子"], ["family_name_kana", "サトウ"], ["given_name_kana", "タケコ"], ["hashed_password", "$2a$12$bcP9Nac5nziU/Vi/PafavucpVqibdr5wbauRVy3rk2cqDNPcySclC"], ["start_date", "2020-01-14"], ["created_at", "2020-04-15 02:26:16.588790"], ["updated_at", "2020-04-15 02:26:16.588790"]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStaffMember Create (1.6ms)[0m  [1m[32mINSERT INTO "staff_members" ("email", "family_name", "given_name", "family_name_kana", "given_name_kana", "hashed_password", "start_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "suzuki.umeko@example.com"], ["family_name", "鈴木"], ["given_name", "梅子"], ["family_name_kana", "スズキ"], ["given_name_kana", "ウメコ"], ["hashed_password", "$2a$12$LsP7etaDUdrOdoJZPPFc6egooeHo07l2JrhIufOqpGzVj8VRJg0b."], ["start_date", "2020-01-15"], ["created_at", "2020-04-15 02:26:17.034685"], ["updated_at", "2020-04-15 02:26:17.034685"]]
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStaffMember Create (1.1ms)[0m  [1m[32mINSERT INTO "staff_members" ("email", "family_name", "given_name", "family_name_kana", "given_name_kana", "hashed_password", "start_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "takahshi.jiro@example.com"], ["family_name", "高橋"], ["given_name", "二郎"], ["family_name_kana", "タカハシ"], ["given_name_kana", "ジロウ"], ["hashed_password", "$2a$12$bSAMb7dCwUEka1YThUyx2OAYiR1EqoeBXhvT0UAXMES/EThAvTXYK"], ["start_date", "2020-01-16"], ["created_at", "2020-04-15 02:26:17.471889"], ["updated_at", "2020-04-15 02:26:17.471889"]]
+  [1m[35m (3.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStaffMember Create (1.2ms)[0m  [1m[32mINSERT INTO "staff_members" ("email", "family_name", "given_name", "family_name_kana", "given_name_kana", "hashed_password", "start_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "tanaka.saburo@example.com"], ["family_name", "田中"], ["given_name", "三郎"], ["family_name_kana", "タナカ"], ["given_name_kana", "サブロウ"], ["hashed_password", "$2a$12$sKD/BJ1cXstkiA341VrqHe99ssgJH1yGiRw1rZSonxAoslMNcqTb2"], ["start_date", "2020-01-17"], ["created_at", "2020-04-15 02:26:17.914523"], ["updated_at", "2020-04-15 02:26:17.914523"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStaffMember Create (1.6ms)[0m  [1m[32mINSERT INTO "staff_members" ("email", "family_name", "given_name", "family_name_kana", "given_name_kana", "hashed_password", "start_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "sato.matsuko@example.com"], ["family_name", "佐藤"], ["given_name", "松子"], ["family_name_kana", "サトウ"], ["given_name_kana", "マツコ"], ["hashed_password", "$2a$12$Qw.zEohgpICL3fPdfB2BMOLvj8SwtKzSXQnowXgPqbG1mhMtiCQoW"], ["start_date", "2020-01-18"], ["created_at", "2020-04-15 02:26:18.337860"], ["updated_at", "2020-04-15 02:26:18.337860"]]
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStaffMember Create (1.2ms)[0m  [1m[32mINSERT INTO "staff_members" ("email", "family_name", "given_name", "family_name_kana", "given_name_kana", "hashed_password", "start_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "suzuki.takeko@example.com"], ["family_name", "鈴木"], ["given_name", "竹子"], ["family_name_kana", "スズキ"], ["given_name_kana", "タケコ"], ["hashed_password", "$2a$12$x/9zh1WpF5GrvXxk7mLN2O2hiaJuvSQVCOLALm4Ay0C6AHnknx5s2"], ["start_date", "2020-01-19"], ["created_at", "2020-04-15 02:26:18.774627"], ["updated_at", "2020-04-15 02:26:18.774627"]]
+  [1m[35m (14.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStaffMember Create (1.0ms)[0m  [1m[32mINSERT INTO "staff_members" ("email", "family_name", "given_name", "family_name_kana", "given_name_kana", "hashed_password", "start_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "takahshi.umeko@example.com"], ["family_name", "高橋"], ["given_name", "梅子"], ["family_name_kana", "タカハシ"], ["given_name_kana", "ウメコ"], ["hashed_password", "$2a$12$v9n129of8DJ3yZY.3Qd9oO8DmgtzXRf8Vmuhz2KTbjs2oAscZdeiW"], ["start_date", "2020-01-20"], ["created_at", "2020-04-15 02:26:19.202567"], ["updated_at", "2020-04-15 02:26:19.202567"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStaffMember Create (1.1ms)[0m  [1m[32mINSERT INTO "staff_members" ("email", "family_name", "given_name", "family_name_kana", "given_name_kana", "hashed_password", "start_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "tanaka.jiro@example.com"], ["family_name", "田中"], ["given_name", "二郎"], ["family_name_kana", "タナカ"], ["given_name_kana", "ジロウ"], ["hashed_password", "$2a$12$UkGTFYGQRT46U2snd608aek.NM4/VdqWINq9gp/cXii826MFBWOey"], ["start_date", "2020-01-21"], ["created_at", "2020-04-15 02:26:19.600943"], ["updated_at", "2020-04-15 02:26:19.600943"]]
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStaffMember Create (1.1ms)[0m  [1m[32mINSERT INTO "staff_members" ("email", "family_name", "given_name", "family_name_kana", "given_name_kana", "hashed_password", "start_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "sato.saburo@example.com"], ["family_name", "佐藤"], ["given_name", "三郎"], ["family_name_kana", "サトウ"], ["given_name_kana", "サブロウ"], ["hashed_password", "$2a$12$V0ZO/x2gj/.CyjPwC3LftONp0YTlj1KqHAMyd8bAdkua4CXRuLf3O"], ["start_date", "2020-01-22"], ["created_at", "2020-04-15 02:26:20.031347"], ["updated_at", "2020-04-15 02:26:20.031347"]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStaffMember Create (1.6ms)[0m  [1m[32mINSERT INTO "staff_members" ("email", "family_name", "given_name", "family_name_kana", "given_name_kana", "hashed_password", "start_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "suzuki.matsuko@example.com"], ["family_name", "鈴木"], ["given_name", "松子"], ["family_name_kana", "スズキ"], ["given_name_kana", "マツコ"], ["hashed_password", "$2a$12$5w/VHtxCcYOk1zfu5CEI1egzmp3KtUjBKA9lhAxkO1P3WmTLDV7y6"], ["start_date", "2020-01-23"], ["created_at", "2020-04-15 02:26:20.461804"], ["updated_at", "2020-04-15 02:26:20.461804"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (2.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStaffMember Create (1.7ms)[0m  [1m[32mINSERT INTO "staff_members" ("email", "family_name", "given_name", "family_name_kana", "given_name_kana", "hashed_password", "start_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "takahshi.takeko@example.com"], ["family_name", "高橋"], ["given_name", "竹子"], ["family_name_kana", "タカハシ"], ["given_name_kana", "タケコ"], ["hashed_password", "$2a$12$PfzLmMxeykenBtattNZqgOsA4RfB3RKpwyqwhQJQFkcyPx2kqEHd6"], ["start_date", "2020-01-24"], ["created_at", "2020-04-15 02:26:20.871662"], ["updated_at", "2020-04-15 02:26:20.871662"]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStaffMember Create (2.1ms)[0m  [1m[32mINSERT INTO "staff_members" ("email", "family_name", "given_name", "family_name_kana", "given_name_kana", "hashed_password", "start_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "tanaka.umeko@example.com"], ["family_name", "田中"], ["given_name", "梅子"], ["family_name_kana", "タナカ"], ["given_name_kana", "ウメコ"], ["hashed_password", "$2a$12$SRGlYUgQe8SK8Lh13xsuoebr4bx1ftS68czyl0C.S5/av/37zB9LG"], ["start_date", "2020-01-25"], ["created_at", "2020-04-15 02:26:21.283264"], ["updated_at", "2020-04-15 02:26:21.283264"]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAdministrator Create (21.0ms)[0m  [1m[32mINSERT INTO "administrators" ("email", "hashed_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "hanako@example.com"], ["hashed_password", "$2a$12$HGNaTnoXFDkTBN4YSNzp2OX7AskTwuBrArgXWL0G3Gl5WyQsHGY4m"], ["created_at", "2020-04-15 02:26:21.773244"], ["updated_at", "2020-04-15 02:26:21.773244"]]
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/admin/staff_members" for 172.18.0.1 at 2020-04-15 04:21:46 +0000
+  [1m[35m (40.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Admin::StaffMembersController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+Completed 500 Internal Server Error in 1353ms (ActiveRecord: 0.0ms | Allocations: 117876)
+
+
+  
+NameError (undefined local variable or method `current_staff_member' for #<Admin::StaffMembersController:0x0000560aefa4c4c8>):
+  
+app/controllers/admin/base.rb:23:in `check_account'
+Started GET "/admin/staff_members/" for 172.18.0.1 at 2020-04-15 04:24:03 +0000
+Processing by Admin::StaffMembersController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mAdministrator Load (30.5ms)[0m  [1m[34mSELECT "administrators".* FROM "administrators" WHERE "administrators"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/base.rb:9:in `current_administrator'
+Completed 500 Internal Server Error in 469ms (ActiveRecord: 149.0ms | Allocations: 8643)
+
+
+  
+NameError (undefined local variable or method `start_date' for #<Administrator:0x0000560af18a2558>):
+  
+app/models/administrator.rb:11:in `active?'
+app/controllers/admin/base.rb:23:in `check_account'
+Started GET "/admin" for 172.18.0.1 at 2020-04-15 04:24:40 +0000
+Processing by Admin::TopController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mAdministrator Load (4.3ms)[0m  [1m[34mSELECT "administrators".* FROM "administrators" WHERE "administrators"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/base.rb:9:in `current_administrator'
+Completed 500 Internal Server Error in 98ms (ActiveRecord: 4.3ms | Allocations: 3484)
+
+
+  
+NameError (undefined local variable or method `start_date' for #<Administrator:0x0000560aeff31d30>):
+  
+app/models/administrator.rb:11:in `active?'
+app/controllers/admin/base.rb:23:in `check_account'
+Started GET "/" for 172.18.0.1 at 2020-04-15 04:26:06 +0000
+Processing by Staff::TopController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (555.4ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  [1m[36mCACHE StaffMember Load (0.7ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  Rendering staff/top/index.html.erb within layouts/staff
+  Rendered staff/top/index.html.erb within layouts/staff (Duration: 52.5ms | Allocations: 113)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mCACHE StaffMember Load (0.0ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  [1m[36mCACHE StaffMember Load (0.0ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  Rendered staff/shared/_header.html.erb (Duration: 46.8ms | Allocations: 1245)
+  Rendered shared/_footer.html.erb (Duration: 13.9ms | Allocations: 84)
+Completed 200 OK in 5680ms (Views: 4951.9ms | ActiveRecord: 587.4ms | Allocations: 15802)
+
+
+Started GET "/login" for 172.18.0.1 at 2020-04-15 04:27:31 +0000
+Processing by Staff::SessionsController#new as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (6.3ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  [1m[36mCACHE StaffMember Load (0.1ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  [1m[36mCACHE StaffMember Load (0.0ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  Rendering staff/sessions/new.html.erb within layouts/staff
+  Rendered staff/sessions/new.html.erb within layouts/staff (Duration: 125.7ms | Allocations: 1082)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mCACHE StaffMember Load (0.0ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  [1m[36mCACHE StaffMember Load (0.0ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  Rendered staff/shared/_header.html.erb (Duration: 33.9ms | Allocations: 1046)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 1320ms (Views: 1154.5ms | ActiveRecord: 6.5ms | Allocations: 8379)
+
+
+Started POST "/session" for 172.18.0.1 at 2020-04-15 04:27:35 +0000
+Processing by Staff::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"1eoVfs/LZnP5MabhMAVLX2vRAS3ZV2IqLa9QPBijRjKtfDzJXYlfwB4KFB4aNFrGxWiqP+WWP2BGMUW4+pY3PQ==", "staff_login_form"=>{"email"=>"taro@example.com", "password"=>"[FILTERED]"}, "commit"=>"ログイン", "host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (13.1ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  [1m[36mCACHE StaffMember Load (0.0ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  [1m[36mStaffMember Load (22.6ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE (LOWER(email) = 'taro@example.com') LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/staff/sessions_controller.rb:17:in `create'
+Redirected to http://baukis2.example.com:3000/
+Completed 302 Found in 1459ms (ActiveRecord: 74.1ms | Allocations: 9215)
+
+
+Started GET "/" for 172.18.0.1 at 2020-04-15 04:27:36 +0000
+Processing by Staff::TopController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (10.8ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  Rendering staff/top/index.html.erb within layouts/staff
+  Rendered staff/top/index.html.erb within layouts/staff (Duration: 0.1ms | Allocations: 6)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered staff/shared/_header.html.erb (Duration: 4.9ms | Allocations: 127)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 5)
+Completed 200 OK in 1591ms (Views: 1542.1ms | ActiveRecord: 10.8ms | Allocations: 4918)
+
+
+Started GET "/account" for 172.18.0.1 at 2020-04-15 04:27:41 +0000
+Processing by Staff::AccountsController#show as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (4.8ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  Rendering staff/accounts/show.html.erb within layouts/staff
+  Rendered staff/accounts/show.html.erb within layouts/staff (Duration: 31.5ms | Allocations: 347)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered staff/shared/_header.html.erb (Duration: 0.6ms | Allocations: 94)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 1212ms (Views: 1137.3ms | ActiveRecord: 4.8ms | Allocations: 5537)
+
+
+Started GET "/admin" for 172.18.0.1 at 2020-04-15 04:27:49 +0000
+Processing by Admin::TopController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mAdministrator Load (7.7ms)[0m  [1m[34mSELECT "administrators".* FROM "administrators" WHERE "administrators"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/base.rb:9:in `current_administrator'
+Completed 500 Internal Server Error in 155ms (ActiveRecord: 7.7ms | Allocations: 3436)
+
+
+  
+NameError (undefined local variable or method `start_date' for #<Administrator:0x0000560af0994228>):
+  
+app/models/administrator.rb:11:in `active?'
+app/controllers/admin/base.rb:23:in `check_account'
+Started GET "/admin" for 172.18.0.1 at 2020-04-15 04:32:52 +0000
+Processing by Admin::TopController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mAdministrator Load (11.6ms)[0m  [1m[34mSELECT "administrators".* FROM "administrators" WHERE "administrators"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/base.rb:9:in `current_administrator'
+Completed 500 Internal Server Error in 303ms (ActiveRecord: 110.5ms | Allocations: 7688)
+
+
+  
+NameError (undefined local variable or method `start_date' for #<Administrator:0x0000560af04b0720>):
+  
+app/models/administrator.rb:11:in `active?'
+app/controllers/admin/base.rb:23:in `check_account'
+Started GET "/admin" for 172.18.0.1 at 2020-04-15 04:36:23 +0000
+Processing by Admin::TopController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mAdministrator Load (46.3ms)[0m  [1m[34mSELECT "administrators".* FROM "administrators" WHERE "administrators"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/base.rb:9:in `current_administrator'
+Completed 500 Internal Server Error in 238ms (ActiveRecord: 46.3ms | Allocations: 3450)
+
+
+  
+NameError (undefined local variable or method `start_date' for #<Administrator:0x0000560af177f180>):
+  
+app/models/administrator.rb:11:in `active?'
+app/controllers/admin/base.rb:23:in `check_account'
+Started GET "/admin" for 172.18.0.1 at 2020-04-15 04:41:29 +0000
+  
+ArgumentError (Before process_action callback :authorize has not been defined):
+  
+app/controllers/admin/base.rb:2:in `<class:Base>'
+app/controllers/admin/base.rb:1:in `<main>'
+app/controllers/admin/top_controller.rb:1:in `<main>'
+Started GET "/admin" for 172.18.0.1 at 2020-04-15 04:43:00 +0000
+Processing by Admin::TopController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mAdministrator Load (6.5ms)[0m  [1m[34mSELECT "administrators".* FROM "administrators" WHERE "administrators"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/base.rb:9:in `current_administrator'
+Completed 500 Internal Server Error in 236ms (ActiveRecord: 90.9ms | Allocations: 7686)
+
+
+  
+NameError (undefined local variable or method `start_date' for #<Administrator:0x0000560af0d4e440>):
+  
+app/models/administrator.rb:11:in `active?'
+app/controllers/admin/base.rb:23:in `check_account'
+Started DELETE "/session" for 172.18.0.1 at 2020-04-15 04:43:12 +0000
+Processing by Staff::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"pWO1WLv+I0OorJvz0vfLIIRewIxIAv3xjjvfrm1b1KS0jQOEBjsUAo9t9zvfrad2ElJCXVRImJJoNEydBao0eQ==", "host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (7.9ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+Redirected to http://baukis2.example.com:3000/
+Completed 302 Found in 217ms (ActiveRecord: 72.7ms | Allocations: 8730)
+
+
+Started GET "/" for 172.18.0.1 at 2020-04-15 04:43:14 +0000
+Processing by Staff::TopController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  Rendering staff/top/index.html.erb within layouts/staff
+  Rendered staff/top/index.html.erb within layouts/staff (Duration: 7.5ms | Allocations: 6)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered staff/shared/_header.html.erb (Duration: 1.0ms | Allocations: 88)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 5)
+Completed 200 OK in 963ms (Views: 946.4ms | ActiveRecord: 0.0ms | Allocations: 4383)
+
+
+Started GET "/admin" for 172.18.0.1 at 2020-04-15 04:43:19 +0000
+Processing by Admin::TopController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mAdministrator Load (8.5ms)[0m  [1m[34mSELECT "administrators".* FROM "administrators" WHERE "administrators"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/base.rb:9:in `current_administrator'
+Completed 500 Internal Server Error in 103ms (ActiveRecord: 8.5ms | Allocations: 3438)
+
+
+  
+NameError (undefined local variable or method `start_date' for #<Administrator:0x0000560af0e604a0>):
+  
+app/models/administrator.rb:11:in `active?'
+app/controllers/admin/base.rb:23:in `check_account'
+Started GET "/admin" for 172.18.0.1 at 2020-04-15 04:45:22 +0000
+Processing by Admin::TopController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mAdministrator Load (1.2ms)[0m  [1m[34mSELECT "administrators".* FROM "administrators" WHERE "administrators"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/base.rb:9:in `current_administrator'
+Completed 500 Internal Server Error in 301ms (ActiveRecord: 76.4ms | Allocations: 6925)
+
+
+  
+NoMethodError (undefined method `active?' for #<Administrator:0x0000560af25464f8>
+Did you mean?  acts_like?):
+  
+app/controllers/admin/base.rb:23:in `check_account'
+Started GET "/admin" for 172.18.0.1 at 2020-04-15 04:45:53 +0000
+Processing by Admin::TopController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+Completed 500 Internal Server Error in 492ms (ActiveRecord: 0.0ms | Allocations: 60579)
+
+
+  
+NoMethodError (undefined method `current_administrator?' for #<Admin::TopController:0x0000560af185c5d0>
+Did you mean?  current_administrator):
+  
+app/controllers/admin/base.rb:23:in `check_account'
+Started GET "/admin" for 172.18.0.1 at 2020-04-15 04:46:09 +0000
+Processing by Admin::TopController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mAdministrator Load (5.8ms)[0m  [1m[34mSELECT "administrators".* FROM "administrators" WHERE "administrators"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/base.rb:9:in `current_administrator'
+Redirected to http://baukis2.example.com:3000/admin
+Filter chain halted as :check_account rendered or redirected
+Completed 302 Found in 417ms (ActiveRecord: 146.5ms | Allocations: 5181)
+
+
+Started GET "/admin" for 172.18.0.1 at 2020-04-15 04:46:11 +0000
+Processing by Admin::TopController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  Rendering admin/top/index.html.erb within layouts/admin
+  Rendered admin/top/index.html.erb within layouts/admin (Duration: 18.8ms | Allocations: 108)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/shared/_header.html.erb (Duration: 12.0ms | Allocations: 277)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 1142ms (Views: 1139.2ms | ActiveRecord: 0.0ms | Allocations: 5687)
+
+
+Started GET "/admin" for 172.18.0.1 at 2020-04-15 04:46:20 +0000
+Processing by Admin::TopController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  Rendering admin/top/index.html.erb within layouts/admin
+  Rendered admin/top/index.html.erb within layouts/admin (Duration: 0.2ms | Allocations: 6)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/shared/_header.html.erb (Duration: 2.2ms | Allocations: 87)
+  Rendered shared/_footer.html.erb (Duration: 0.5ms | Allocations: 5)
+Completed 200 OK in 1330ms (Views: 1320.1ms | ActiveRecord: 0.0ms | Allocations: 4181)
+
+
+Started GET "/admin/login" for 172.18.0.1 at 2020-04-15 04:46:26 +0000
+Processing by Admin::SessionsController#new as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  Rendering admin/sessions/new.html.erb within layouts/admin
+  Rendered admin/sessions/new.html.erb within layouts/admin (Duration: 35.7ms | Allocations: 712)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/shared/_header.html.erb (Duration: 1.2ms | Allocations: 83)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 5)
+Completed 200 OK in 837ms (Views: 664.1ms | ActiveRecord: 0.0ms | Allocations: 5501)
+
+
+Started POST "/admin/session" for 172.18.0.1 at 2020-04-15 04:46:30 +0000
+Processing by Admin::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"YBaNWua6NQatNMn91jM9e8jSs78w3zYPFVumNAkYiFTBo2zZNA7vZwU1Ua7BNmiN4lH9JPXAi57GXV6WWDi0Fg==", "admin_login_form"=>{"email"=>"taro@example.com", "password"=>"[FILTERED]"}, "commit"=>"ログイン", "host"=>"baukis2.example.com"}
+  [1m[36mAdministrator Load (10.5ms)[0m  [1m[34mSELECT "administrators".* FROM "administrators" WHERE (LOWER(email) = 'taro@example.com') LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/admin/sessions_controller.rb:17:in `create'
+  Rendering admin/sessions/new.html.erb within layouts/admin
+  Rendered admin/sessions/new.html.erb within layouts/admin (Duration: 13.7ms | Allocations: 348)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/shared/_header.html.erb (Duration: 0.3ms | Allocations: 88)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 1309ms (Views: 1057.2ms | ActiveRecord: 10.5ms | Allocations: 5386)
+
+
+Started POST "/admin/session" for 172.18.0.1 at 2020-04-15 04:46:35 +0000
+Processing by Admin::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"xVOKhr7aTnw0hvAvjoYQ1Ok7nDKcnuh+zbdf9991813UvTxaAx95PRNHnOeD3HyCfzce44DUjR0ruMzEt4QTgA==", "admin_login_form"=>{"email"=>"taro@example.com", "password"=>"[FILTERED]"}, "commit"=>"ログイン", "host"=>"baukis2.example.com"}
+  [1m[36mAdministrator Load (76.7ms)[0m  [1m[34mSELECT "administrators".* FROM "administrators" WHERE (LOWER(email) = 'taro@example.com') LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/admin/sessions_controller.rb:17:in `create'
+  Rendering admin/sessions/new.html.erb within layouts/admin
+  Rendered admin/sessions/new.html.erb within layouts/admin (Duration: 6.4ms | Allocations: 348)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/shared/_header.html.erb (Duration: 0.2ms | Allocations: 88)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 5)
+Completed 200 OK in 1254ms (Views: 1154.5ms | ActiveRecord: 76.7ms | Allocations: 5325)
+
+
+Started POST "/admin/session" for 172.18.0.1 at 2020-04-15 04:46:40 +0000
+Processing by Admin::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"gFxg9Q4sDDnt0SVTu78/iDPWQgONlltd+3ucJtY+jZqRstYps+k7eMoQSZu25VPepdrA0pHcPj4ddA8Vvs9tRw==", "admin_login_form"=>{"email"=>"hanako@example.com", "password"=>"[FILTERED]"}, "commit"=>"ログイン", "host"=>"baukis2.example.com"}
+  [1m[36mAdministrator Load (8.1ms)[0m  [1m[34mSELECT "administrators".* FROM "administrators" WHERE (LOWER(email) = 'hanako@example.com') LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/admin/sessions_controller.rb:17:in `create'
+Redirected to http://baukis2.example.com:3000/admin
+Completed 302 Found in 1308ms (ActiveRecord: 8.1ms | Allocations: 1180)
+
+
+Started GET "/admin" for 172.18.0.1 at 2020-04-15 04:46:42 +0000
+Processing by Admin::TopController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mAdministrator Load (1.4ms)[0m  [1m[34mSELECT "administrators".* FROM "administrators" WHERE "administrators"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/base.rb:9:in `current_administrator'
+Redirected to http://baukis2.example.com:3000/admin
+Filter chain halted as :check_account rendered or redirected
+Completed 302 Found in 93ms (ActiveRecord: 1.4ms | Allocations: 931)
+
+
+Started GET "/admin" for 172.18.0.1 at 2020-04-15 04:46:42 +0000
+Processing by Admin::TopController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  Rendering admin/top/index.html.erb within layouts/admin
+  Rendered admin/top/index.html.erb within layouts/admin (Duration: 0.1ms | Allocations: 6)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/shared/_header.html.erb (Duration: 2.3ms | Allocations: 114)
+  Rendered shared/_footer.html.erb (Duration: 1.2ms | Allocations: 5)
+Completed 200 OK in 991ms (Views: 986.8ms | ActiveRecord: 0.0ms | Allocations: 4237)
+
+
+Started GET "/admin/login" for 172.18.0.1 at 2020-04-15 04:46:54 +0000
+Processing by Admin::SessionsController#new as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  Rendering admin/sessions/new.html.erb within layouts/admin
+  Rendered admin/sessions/new.html.erb within layouts/admin (Duration: 34.1ms | Allocations: 345)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/shared/_header.html.erb (Duration: 0.6ms | Allocations: 80)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 708ms (Views: 704.1ms | ActiveRecord: 0.0ms | Allocations: 4512)
+
+
+Started POST "/admin/session" for 172.18.0.1 at 2020-04-15 04:46:57 +0000
+Processing by Admin::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"GCAvzLxsggmOoLDjIuIQh3qYZDQWs717EOGBkA3ndRu5lc5PbthYaCahKLA150VxUBsqr9OsAOrD53kyXMdJWQ==", "admin_login_form"=>{"email"=>"hanako@example.com", "password"=>"[FILTERED]"}, "commit"=>"ログイン", "host"=>"baukis2.example.com"}
+  [1m[36mAdministrator Load (9.7ms)[0m  [1m[34mSELECT "administrators".* FROM "administrators" WHERE (LOWER(email) = 'hanako@example.com') LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/admin/sessions_controller.rb:17:in `create'
+Redirected to http://baukis2.example.com:3000/admin
+Completed 302 Found in 818ms (ActiveRecord: 9.7ms | Allocations: 1204)
+
+
+Started GET "/admin" for 172.18.0.1 at 2020-04-15 04:46:58 +0000
+Processing by Admin::TopController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mAdministrator Load (4.5ms)[0m  [1m[34mSELECT "administrators".* FROM "administrators" WHERE "administrators"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/base.rb:9:in `current_administrator'
+Redirected to http://baukis2.example.com:3000/admin
+Filter chain halted as :check_account rendered or redirected
+Completed 302 Found in 71ms (ActiveRecord: 4.5ms | Allocations: 933)
+
+
+Started GET "/admin" for 172.18.0.1 at 2020-04-15 04:46:58 +0000
+Processing by Admin::TopController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  Rendering admin/top/index.html.erb within layouts/admin
+  Rendered admin/top/index.html.erb within layouts/admin (Duration: 0.2ms | Allocations: 6)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/shared/_header.html.erb (Duration: 2.2ms | Allocations: 106)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 5)
+Completed 200 OK in 701ms (Views: 699.8ms | ActiveRecord: 0.0ms | Allocations: 4221)
+
+
+Started GET "/admin/login" for 172.18.0.1 at 2020-04-15 04:47:19 +0000
+Processing by Admin::SessionsController#new as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  Rendering admin/sessions/new.html.erb within layouts/admin
+  Rendered admin/sessions/new.html.erb within layouts/admin (Duration: 1.1ms | Allocations: 345)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/shared/_header.html.erb (Duration: 1.8ms | Allocations: 80)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 427ms (Views: 424.9ms | ActiveRecord: 0.0ms | Allocations: 4512)
+
+
+Started POST "/admin/session" for 172.18.0.1 at 2020-04-15 04:47:22 +0000
+Processing by Admin::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"Ar5BOBgBEehj+IcI97ViaJRlcsMiIyVLkyVG9NZ452ijC6C7yrXLicv5H1vgsDeevuY8WOc8mNpAI75Wh1jbKg==", "admin_login_form"=>{"email"=>"hanako@example.com", "password"=>"[FILTERED]"}, "commit"=>"ログイン", "host"=>"baukis2.example.com"}
+  [1m[36mAdministrator Load (8.9ms)[0m  [1m[34mSELECT "administrators".* FROM "administrators" WHERE (LOWER(email) = 'hanako@example.com') LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/admin/sessions_controller.rb:17:in `create'
+Redirected to http://baukis2.example.com:3000/admin
+Completed 302 Found in 830ms (ActiveRecord: 8.9ms | Allocations: 1196)
+
+
+Started GET "/admin" for 172.18.0.1 at 2020-04-15 04:47:23 +0000
+Processing by Admin::TopController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mAdministrator Load (1.6ms)[0m  [1m[34mSELECT "administrators".* FROM "administrators" WHERE "administrators"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/base.rb:9:in `current_administrator'
+Redirected to http://baukis2.example.com:3000/admin
+Filter chain halted as :check_account rendered or redirected
+Completed 302 Found in 34ms (ActiveRecord: 1.6ms | Allocations: 927)
+
+
+Started GET "/admin" for 172.18.0.1 at 2020-04-15 04:47:23 +0000
+Processing by Admin::TopController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  Rendering admin/top/index.html.erb within layouts/admin
+  Rendered admin/top/index.html.erb within layouts/admin (Duration: 0.3ms | Allocations: 6)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/shared/_header.html.erb (Duration: 0.7ms | Allocations: 106)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 509ms (Views: 507.0ms | ActiveRecord: 0.0ms | Allocations: 4202)
+
+
+Started GET "/admin" for 172.18.0.1 at 2020-04-15 04:51:08 +0000
+Processing by Admin::TopController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  Rendering admin/top/index.html.erb within layouts/admin
+  Rendered admin/top/index.html.erb within layouts/admin (Duration: 0.2ms | Allocations: 6)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/shared/_header.html.erb (Duration: 0.4ms | Allocations: 97)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 778ms (Views: 775.0ms | ActiveRecord: 0.0ms | Allocations: 4361)
+
+
+Started GET "/admin/login" for 172.18.0.1 at 2020-04-15 04:51:13 +0000
+Processing by Admin::SessionsController#new as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  Rendering admin/sessions/new.html.erb within layouts/admin
+  Rendered admin/sessions/new.html.erb within layouts/admin (Duration: 12.9ms | Allocations: 466)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/shared/_header.html.erb (Duration: 0.6ms | Allocations: 83)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 992ms (Views: 920.5ms | ActiveRecord: 0.0ms | Allocations: 5125)
+
+
+Started POST "/admin/session" for 172.18.0.1 at 2020-04-15 04:51:16 +0000
+Processing by Admin::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"L2sWPO/onIt5v9/N4XFhG+F+QIBK9bzadaTHql9sphaO3ve/PVxG6tG+R572dDTty/0OG4/qAUumoj8IDkyaVA==", "admin_login_form"=>{"email"=>"hanako@example.com", "password"=>"[FILTERED]"}, "commit"=>"ログイン", "host"=>"baukis2.example.com"}
+  [1m[36mAdministrator Load (14.5ms)[0m  [1m[34mSELECT "administrators".* FROM "administrators" WHERE (LOWER(email) = 'hanako@example.com') LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/admin/sessions_controller.rb:17:in `create'
+Redirected to http://baukis2.example.com:3000/admin
+Completed 302 Found in 1370ms (ActiveRecord: 194.1ms | Allocations: 5338)
+
+
+Started GET "/admin" for 172.18.0.1 at 2020-04-15 04:51:17 +0000
+Processing by Admin::TopController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mAdministrator Load (7.9ms)[0m  [1m[34mSELECT "administrators".* FROM "administrators" WHERE "administrators"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/base.rb:9:in `current_administrator'
+Redirected to http://baukis2.example.com:3000/admin
+Filter chain halted as :check_account rendered or redirected
+Completed 302 Found in 50ms (ActiveRecord: 7.9ms | Allocations: 1033)
+
+
+Started GET "/admin" for 172.18.0.1 at 2020-04-15 04:51:18 +0000
+Processing by Admin::TopController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  Rendering admin/top/index.html.erb within layouts/admin
+  Rendered admin/top/index.html.erb within layouts/admin (Duration: 0.2ms | Allocations: 6)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/shared/_header.html.erb (Duration: 0.9ms | Allocations: 106)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 861ms (Views: 859.0ms | ActiveRecord: 0.0ms | Allocations: 4213)
+
+
+Started GET "/admin" for 172.18.0.1 at 2020-04-15 04:51:48 +0000
+Processing by Admin::TopController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  Rendering admin/top/index.html.erb within layouts/admin
+  Rendered admin/top/index.html.erb within layouts/admin (Duration: 0.3ms | Allocations: 6)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/shared/_header.html.erb (Duration: 1.3ms | Allocations: 97)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 887ms (Views: 882.1ms | ActiveRecord: 0.0ms | Allocations: 4385)
+
+
+Started GET "/admin/login" for 172.18.0.1 at 2020-04-15 04:51:53 +0000
+Processing by Admin::SessionsController#new as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  Rendering admin/sessions/new.html.erb within layouts/admin
+  Rendered admin/sessions/new.html.erb within layouts/admin (Duration: 6.5ms | Allocations: 466)
+Started GET "/admin/login" for 172.18.0.1 at 2020-04-15 04:51:53 +0000
+Processing by Admin::SessionsController#new as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendering admin/sessions/new.html.erb within layouts/admin
+  Rendered admin/sessions/new.html.erb within layouts/admin (Duration: 5.9ms | Allocations: 345)
+  Rendered admin/shared/_header.html.erb (Duration: 0.7ms | Allocations: 83)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 552ms (Views: 519.0ms | ActiveRecord: 0.0ms | Allocations: 9326)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/shared/_header.html.erb (Duration: 0.2ms | Allocations: 80)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 360ms (Views: 353.4ms | ActiveRecord: 0.0ms | Allocations: 5596)
+
+
+Started POST "/admin/session" for 172.18.0.1 at 2020-04-15 04:51:56 +0000
+Processing by Admin::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"eG3aQRLml5KhbPgJTPwQOa/+r9+8hh2qLPSKVheW5EfZ2DvCwFJN8wltYFpb+UXPhX3hRHmZoDv/8nL0RrbYBQ==", "admin_login_form"=>{"email"=>"hanako@example.com", "password"=>"[FILTERED]"}, "commit"=>"ログイン", "host"=>"baukis2.example.com"}
+  [1m[36mAdministrator Load (27.6ms)[0m  [1m[34mSELECT "administrators".* FROM "administrators" WHERE (LOWER(email) = 'hanako@example.com') LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/admin/sessions_controller.rb:17:in `create'
+Redirected to http://baukis2.example.com:3000/admin
+Completed 302 Found in 1362ms (ActiveRecord: 302.1ms | Allocations: 5483)
+
+
+Started GET "/admin" for 172.18.0.1 at 2020-04-15 04:51:57 +0000
+Processing by Admin::TopController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mAdministrator Load (10.2ms)[0m  [1m[34mSELECT "administrators".* FROM "administrators" WHERE "administrators"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/base.rb:9:in `current_administrator'
+Redirected to http://baukis2.example.com:3000/admin
+Filter chain halted as :check_account rendered or redirected
+Completed 302 Found in 58ms (ActiveRecord: 13.5ms | Allocations: 1072)
+
+
+Started GET "/admin" for 172.18.0.1 at 2020-04-15 04:51:57 +0000
+Processing by Admin::TopController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  Rendering admin/top/index.html.erb within layouts/admin
+  Rendered admin/top/index.html.erb within layouts/admin (Duration: 0.1ms | Allocations: 6)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/shared/_header.html.erb (Duration: 0.7ms | Allocations: 106)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 977ms (Views: 975.6ms | ActiveRecord: 0.0ms | Allocations: 4212)
+
+
+Started GET "/admin" for 172.18.0.1 at 2020-04-15 04:52:36 +0000
+Processing by Admin::TopController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  Rendering admin/top/index.html.erb within layouts/admin
+  Rendered admin/top/index.html.erb within layouts/admin (Duration: 0.1ms | Allocations: 6)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/shared/_header.html.erb (Duration: 0.3ms | Allocations: 97)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 643ms (Views: 640.7ms | ActiveRecord: 0.0ms | Allocations: 4402)
+
+
+Started GET "/admin/login" for 172.18.0.1 at 2020-04-15 04:52:41 +0000
+Processing by Admin::SessionsController#new as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  Rendering admin/sessions/new.html.erb within layouts/admin
+  Rendered admin/sessions/new.html.erb within layouts/admin (Duration: 10.0ms | Allocations: 466)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/shared/_header.html.erb (Duration: 0.4ms | Allocations: 83)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 5)
+Completed 200 OK in 434ms (Views: 401.2ms | ActiveRecord: 0.0ms | Allocations: 5124)
+
+
+Started GET "/admin/login" for 172.18.0.1 at 2020-04-15 04:52:42 +0000
+Processing by Admin::SessionsController#new as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  Rendering admin/sessions/new.html.erb within layouts/admin
+  Rendered admin/sessions/new.html.erb within layouts/admin (Duration: 2.3ms | Allocations: 345)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/shared/_header.html.erb (Duration: 1.4ms | Allocations: 80)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 1360ms (Views: 1331.5ms | ActiveRecord: 0.0ms | Allocations: 4518)
+
+
+Started POST "/admin/session" for 172.18.0.1 at 2020-04-15 04:52:44 +0000
+Processing by Admin::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"zpBcudyFCaU+hwcz25WBWY0yIWlCMtVtUQTgvmYrG81vJb06DjHTxJaGn2DMkNSvp7Fv8octaPyCAhgcNwsnjw==", "admin_login_form"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"ログイン", "host"=>"baukis2.example.com"}
+  Rendering admin/sessions/new.html.erb within layouts/admin
+  Rendered admin/sessions/new.html.erb within layouts/admin (Duration: 18.9ms | Allocations: 346)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/shared/_header.html.erb (Duration: 0.2ms | Allocations: 88)
+  Rendered shared/_footer.html.erb (Duration: 0.7ms | Allocations: 5)
+Completed 200 OK in 2002ms (Views: 1914.3ms | ActiveRecord: 0.0ms | Allocations: 4714)
+
+
+Started POST "/admin/session" for 172.18.0.1 at 2020-04-15 04:52:48 +0000
+Processing by Admin::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"JM81HTIky1vh6rqmJIhp4r0Gh7qhO2DnWe9SvoA1Y+k1IYPBj+H8GsYr1m4p0gW0KwoFa71xBYS/4MGN6MSDNA==", "admin_login_form"=>{"email"=>"hanako@example.com", "password"=>"[FILTERED]"}, "commit"=>"ログイン", "host"=>"baukis2.example.com"}
+  [1m[36mAdministrator Load (25.9ms)[0m  [1m[34mSELECT "administrators".* FROM "administrators" WHERE (LOWER(email) = 'hanako@example.com') LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/admin/sessions_controller.rb:17:in `create'
+Redirected to http://baukis2.example.com:3000/admin
+Completed 302 Found in 1023ms (ActiveRecord: 174.0ms | Allocations: 5249)
+
+
+Started GET "/admin" for 172.18.0.1 at 2020-04-15 04:52:50 +0000
+Processing by Admin::TopController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mAdministrator Load (9.9ms)[0m  [1m[34mSELECT "administrators".* FROM "administrators" WHERE "administrators"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/base.rb:9:in `current_administrator'
+  Rendering admin/top/dashbord.html.erb within layouts/admin
+  Rendered admin/top/dashbord.html.erb within layouts/admin (Duration: 29.5ms | Allocations: 179)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/shared/_header.html.erb (Duration: 0.7ms | Allocations: 115)
+  Rendered shared/_footer.html.erb (Duration: 1.4ms | Allocations: 5)
+Completed 200 OK in 1272ms (Views: 1238.3ms | ActiveRecord: 9.9ms | Allocations: 5239)
+
+
+Started GET "/admin/staff_members" for 172.18.0.1 at 2020-04-15 04:52:55 +0000
+Processing by Admin::StaffMembersController#index as HTML
+Started GET "/admin/staff_members" for 172.18.0.1 at 2020-04-15 04:52:56 +0000
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mAdministrator Load (12.0ms)[0m  [1m[34mSELECT "administrators".* FROM "administrators" WHERE "administrators"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/base.rb:9:in `current_administrator'
+Processing by Admin::StaffMembersController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mAdministrator Load (8.0ms)[0m  [1m[34mSELECT "administrators".* FROM "administrators" WHERE "administrators"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/base.rb:9:in `current_administrator'
+  Rendering admin/staff_members/index.html.erb within layouts/admin
+  Rendering admin/staff_members/index.html.erb within layouts/admin
+  [1m[36mStaffMember Load (21.5ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" ORDER BY "staff_members"."family_name_kana" ASC, "staff_members"."given_name_kana" ASC[0m
+  ↳ app/views/admin/staff_members/index.html.erb:19
+  Rendered admin/staff_members/index.html.erb within layouts/admin (Duration: 197.4ms | Allocations: 12579)
+  [1m[36mStaffMember Load (173.9ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" ORDER BY "staff_members"."family_name_kana" ASC, "staff_members"."given_name_kana" ASC[0m
+  ↳ app/views/admin/staff_members/index.html.erb:19
+  Rendered admin/staff_members/index.html.erb within layouts/admin (Duration: 401.8ms | Allocations: 17929)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/shared/_header.html.erb (Duration: 0.8ms | Allocations: 96)
+  Rendered admin/shared/_header.html.erb (Duration: 1.2ms | Allocations: 93)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 1530ms (Views: 1366.7ms | ActiveRecord: 61.2ms | Allocations: 27572)
+
+
+Completed 200 OK in 1707ms (Views: 1261.7ms | ActiveRecord: 278.3ms | Allocations: 29301)
+
+
+Started GET "/admin/staff_members" for 172.18.0.1 at 2020-04-15 04:53:45 +0000
+Processing by Admin::StaffMembersController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mAdministrator Load (9.5ms)[0m  [1m[34mSELECT "administrators".* FROM "administrators" WHERE "administrators"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/base.rb:9:in `current_administrator'
+Completed 500 Internal Server Error in 634ms (ActiveRecord: 95.6ms | Allocations: 65425)
+
+
+  
+NoMethodError (undefined method `check_timeout' for #<Admin::StaffMembersController:0x0000560af09c9a90>
+Did you mean?  check_account):
+  
+activesupport (6.0.2.2) lib/active_support/callbacks.rb:429:in `block in make_lambda'
+activesupport (6.0.2.2) lib/active_support/callbacks.rb:201:in `block (2 levels) in halting'
+actionpack (6.0.2.2) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.0.2.2) lib/active_support/callbacks.rb:202:in `block in halting'
+activesupport (6.0.2.2) lib/active_support/callbacks.rb:514:in `block in invoke_before'
+activesupport (6.0.2.2) lib/active_support/callbacks.rb:514:in `each'
+activesupport (6.0.2.2) lib/active_support/callbacks.rb:514:in `invoke_before'
+activesupport (6.0.2.2) lib/active_support/callbacks.rb:134:in `run_callbacks'
+actionpack (6.0.2.2) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.2.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.2.2) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.2.2) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.2.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.2.2) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.2.2) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.2.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.2.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.2.2) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.2.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.2.2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.2.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.2.2) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.2.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/admin/staff_members" for 172.18.0.1 at 2020-04-15 04:54:05 +0000
+Processing by Admin::StaffMembersController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mAdministrator Load (10.0ms)[0m  [1m[34mSELECT "administrators".* FROM "administrators" WHERE "administrators"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/base.rb:9:in `current_administrator'
+Redirected to http://baukis2.example.com:3000/admin/login
+Filter chain halted as :check_timeout rendered or redirected
+Completed 302 Found in 292ms (ActiveRecord: 113.7ms | Allocations: 5249)
+
+
+Started GET "/admin/login" for 172.18.0.1 at 2020-04-15 04:54:08 +0000
+Processing by Admin::SessionsController#new as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  Rendering admin/sessions/new.html.erb within layouts/admin
+  Rendered admin/sessions/new.html.erb within layouts/admin (Duration: 8.8ms | Allocations: 465)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/shared/_header.html.erb (Duration: 0.9ms | Allocations: 102)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 1314ms (Views: 1237.5ms | ActiveRecord: 0.0ms | Allocations: 5179)
+
+
+Started POST "/admin/session" for 172.18.0.1 at 2020-04-15 04:54:14 +0000
+Processing by Admin::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"rRZyiBiTZrK7WhW7iFiKSy3wSlD59yZdhXHZUvybLbK8+MRUpVZR85ybeXOFAuYdu/zIgeW9Qz5jfkphlGrNbw==", "admin_login_form"=>{"email"=>"hanako@example.com", "password"=>"[FILTERED]"}, "commit"=>"ログイン", "host"=>"baukis2.example.com"}
+  [1m[36mAdministrator Load (9.2ms)[0m  [1m[34mSELECT "administrators".* FROM "administrators" WHERE (LOWER(email) = 'hanako@example.com') LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/admin/sessions_controller.rb:17:in `create'
+Redirected to http://baukis2.example.com:3000/admin
+Completed 302 Found in 1211ms (ActiveRecord: 9.2ms | Allocations: 1223)
+
+
+Started GET "/admin" for 172.18.0.1 at 2020-04-15 04:54:15 +0000
+Processing by Admin::TopController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mAdministrator Load (13.1ms)[0m  [1m[34mSELECT "administrators".* FROM "administrators" WHERE "administrators"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/base.rb:9:in `current_administrator'
+Redirected to http://baukis2.example.com:3000/admin/login
+Filter chain halted as :check_timeout rendered or redirected
+Completed 302 Found in 97ms (ActiveRecord: 13.1ms | Allocations: 1040)
+
+
+Started GET "/admin/login" for 172.18.0.1 at 2020-04-15 04:54:16 +0000
+Processing by Admin::SessionsController#new as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  Rendering admin/sessions/new.html.erb within layouts/admin
+  Rendered admin/sessions/new.html.erb within layouts/admin (Duration: 5.5ms | Allocations: 345)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/shared/_header.html.erb (Duration: 1.2ms | Allocations: 99)
+  Rendered shared/_footer.html.erb (Duration: 1.4ms | Allocations: 5)
+Completed 200 OK in 1195ms (Views: 1190.7ms | ActiveRecord: 0.0ms | Allocations: 4541)
+
+
+Started GET "/admin/login" for 172.18.0.1 at 2020-04-15 04:54:27 +0000
+Processing by Admin::SessionsController#new as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  Rendering admin/sessions/new.html.erb within layouts/admin
+  Rendered admin/sessions/new.html.erb within layouts/admin (Duration: 12.3ms | Allocations: 465)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/shared/_header.html.erb (Duration: 19.9ms | Allocations: 84)
+  Rendered shared/_footer.html.erb (Duration: 2.1ms | Allocations: 5)
+Completed 200 OK in 1686ms (Views: 1620.0ms | ActiveRecord: 0.0ms | Allocations: 5141)
+
+
+Started POST "/admin/session" for 172.18.0.1 at 2020-04-15 04:54:33 +0000
+Processing by Admin::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"Zx8AQODhGvtZzmiAfDzDYOkbHhzTn++eory+GQzb4b128bacXSQtun4PBEhxZq82fxeczc/Viv1Esy0qZCoBYA==", "admin_login_form"=>{"email"=>"hanako@example.com", "password"=>"[FILTERED]"}, "commit"=>"ログイン", "host"=>"baukis2.example.com"}
+  [1m[36mAdministrator Load (21.7ms)[0m  [1m[34mSELECT "administrators".* FROM "administrators" WHERE (LOWER(email) = 'hanako@example.com') LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/admin/sessions_controller.rb:17:in `create'
+Redirected to http://baukis2.example.com:3000/admin
+Completed 302 Found in 1269ms (ActiveRecord: 233.1ms | Allocations: 5320)
+
+
+Started GET "/admin" for 172.18.0.1 at 2020-04-15 04:54:35 +0000
+Processing by Admin::TopController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mAdministrator Load (2.6ms)[0m  [1m[34mSELECT "administrators".* FROM "administrators" WHERE "administrators"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/base.rb:9:in `current_administrator'
+  Rendering admin/top/dashbord.html.erb within layouts/admin
+  Rendered admin/top/dashbord.html.erb within layouts/admin (Duration: 2.4ms | Allocations: 46)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/shared/_header.html.erb (Duration: 6.2ms | Allocations: 115)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 1205ms (Views: 1172.6ms | ActiveRecord: 2.6ms | Allocations: 5148)
+
+
+Started GET "/admin/staff_members" for 172.18.0.1 at 2020-04-15 04:55:23 +0000
+Processing by Admin::StaffMembersController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mAdministrator Load (1.4ms)[0m  [1m[34mSELECT "administrators".* FROM "administrators" WHERE "administrators"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/base.rb:9:in `current_administrator'
+  Rendering admin/staff_members/index.html.erb within layouts/admin
+  [1m[36mStaffMember Load (15.6ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" ORDER BY "staff_members"."family_name_kana" ASC, "staff_members"."given_name_kana" ASC[0m
+  ↳ app/views/admin/staff_members/index.html.erb:19
+  Rendered admin/staff_members/index.html.erb within layouts/admin (Duration: 137.2ms | Allocations: 11917)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/shared/_header.html.erb (Duration: 0.3ms | Allocations: 96)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 932ms (Views: 767.0ms | ActiveRecord: 69.2ms | Allocations: 17887)
+
+
+Started GET "/admin/staff_members/new" for 172.18.0.1 at 2020-04-15 04:55:27 +0000
+Processing by Admin::StaffMembersController#new as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mAdministrator Load (1.3ms)[0m  [1m[34mSELECT "administrators".* FROM "administrators" WHERE "administrators"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/base.rb:9:in `current_administrator'
+  Rendering admin/staff_members/new.html.erb within layouts/admin
+  Rendered admin/staff_members/_form.html.erb (Duration: 71.0ms | Allocations: 1793)
+  Rendered admin/staff_members/new.html.erb within layouts/admin (Duration: 108.2ms | Allocations: 2464)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/shared/_header.html.erb (Duration: 0.5ms | Allocations: 95)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 626ms (Views: 588.4ms | ActiveRecord: 1.3ms | Allocations: 7446)
+
+
+Started GET "/" for 172.18.0.1 at 2020-04-15 04:55:29 +0000
+Processing by Staff::TopController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  Rendering staff/top/index.html.erb within layouts/staff
+  Rendered staff/top/index.html.erb within layouts/staff (Duration: 0.1ms | Allocations: 6)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered staff/shared/_header.html.erb (Duration: 1.2ms | Allocations: 69)
+  Rendered shared/_footer.html.erb (Duration: 0.4ms | Allocations: 5)
+Completed 200 OK in 622ms (Views: 618.3ms | ActiveRecord: 0.0ms | Allocations: 4337)
+
+
+Started GET "/admin" for 172.18.0.1 at 2020-04-15 04:55:35 +0000
+Processing by Admin::TopController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mAdministrator Load (9.0ms)[0m  [1m[34mSELECT "administrators".* FROM "administrators" WHERE "administrators"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/base.rb:9:in `current_administrator'
+  Rendering admin/top/dashbord.html.erb within layouts/admin
+  Rendered admin/top/dashbord.html.erb within layouts/admin (Duration: 1.8ms | Allocations: 44)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/shared/_header.html.erb (Duration: 1.8ms | Allocations: 96)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 951ms (Views: 700.6ms | ActiveRecord: 9.0ms | Allocations: 4836)
+
+
+Started GET "/admin/staff_members" for 172.18.0.1 at 2020-04-15 04:55:43 +0000
+Processing by Admin::StaffMembersController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mAdministrator Load (1.4ms)[0m  [1m[34mSELECT "administrators".* FROM "administrators" WHERE "administrators"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/base.rb:9:in `current_administrator'
+  Rendering admin/staff_members/index.html.erb within layouts/admin
+  [1m[36mStaffMember Load (5.3ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" ORDER BY "staff_members"."family_name_kana" ASC, "staff_members"."given_name_kana" ASC[0m
+  ↳ app/views/admin/staff_members/index.html.erb:19
+  Rendered admin/staff_members/index.html.erb within layouts/admin (Duration: 183.1ms | Allocations: 5236)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/shared/_header.html.erb (Duration: 1.0ms | Allocations: 93)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 1109ms (Views: 1078.3ms | ActiveRecord: 6.7ms | Allocations: 10080)
+
+
+Started GET "/admin/staff_members" for 172.18.0.1 at 2020-04-15 04:55:54 +0000
+Processing by Admin::StaffMembersController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mAdministrator Load (6.4ms)[0m  [1m[34mSELECT "administrators".* FROM "administrators" WHERE "administrators"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/base.rb:9:in `current_administrator'
+  Rendering admin/staff_members/index.html.erb within layouts/admin
+  [1m[36mStaffMember Load (30.4ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" ORDER BY "staff_members"."family_name_kana" ASC, "staff_members"."given_name_kana" ASC[0m
+  ↳ app/views/admin/staff_members/index.html.erb:19
+  Rendered admin/staff_members/index.html.erb within layouts/admin (Duration: 202.9ms | Allocations: 5233)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/shared/_header.html.erb (Duration: 2.0ms | Allocations: 93)
+  Rendered shared/_footer.html.erb (Duration: 2.3ms | Allocations: 5)
+Completed 200 OK in 953ms (Views: 881.6ms | ActiveRecord: 36.8ms | Allocations: 10090)
+
+
+Started GET "/admin/staff_members" for 172.18.0.1 at 2020-04-15 04:56:31 +0000
+Processing by Admin::StaffMembersController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mAdministrator Load (3.2ms)[0m  [1m[34mSELECT "administrators".* FROM "administrators" WHERE "administrators"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/base.rb:9:in `current_administrator'
+  Rendering admin/staff_members/index.html.erb within layouts/admin
+  [1m[36mStaffMember Load (34.8ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" ORDER BY "staff_members"."family_name_kana" ASC, "staff_members"."given_name_kana" ASC[0m
+  ↳ app/views/admin/staff_members/index.html.erb:19
+  Rendered admin/staff_members/index.html.erb within layouts/admin (Duration: 329.9ms | Allocations: 5233)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/shared/_header.html.erb (Duration: 0.2ms | Allocations: 93)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 1117ms (Views: 1036.8ms | ActiveRecord: 38.0ms | Allocations: 10077)
+
+
+Started GET "/admin/" for 172.18.0.1 at 2020-04-15 05:01:12 +0000
+Processing by Admin::TopController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mAdministrator Load (6.6ms)[0m  [1m[34mSELECT "administrators".* FROM "administrators" WHERE "administrators"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/base.rb:9:in `current_administrator'
+Redirected to http://baukis2.example.com:3000/admin/login
+Filter chain halted as :check_timeout rendered or redirected
+Completed 302 Found in 103ms (ActiveRecord: 6.6ms | Allocations: 964)
+
+
+Started GET "/admin/login" for 172.18.0.1 at 2020-04-15 05:01:12 +0000
+Processing by Admin::SessionsController#new as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  Rendering admin/sessions/new.html.erb within layouts/admin
+  Rendered admin/sessions/new.html.erb within layouts/admin (Duration: 3.9ms | Allocations: 353)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered admin/shared/_header.html.erb (Duration: 0.3ms | Allocations: 102)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 1336ms (Views: 1333.1ms | ActiveRecord: 0.0ms | Allocations: 4561)
+
+
