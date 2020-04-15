@@ -24,14 +24,14 @@ describe "管理者による職員管理" do
         end
 
         example "停止フラグがセットされたら強制的にログアウト" do
-            pending('保留 4/15')
+            # pending('保留 4/15')
             administrator.update_column(:suspended, true)
             get admin_staff_members_url
             expect(response).to redirect_to(admin_root_url)
         end
 
         example "セッションタイムアウト" do
-            pending('保留 4/15')
+            # pending('保留 4/15')
             travel_to Admin::Base::TIMEOUT.from_now.advance(seconds: 1)
             get admin_staff_members_url
             expect(response).to redirect_to(admin_login_url)
@@ -42,13 +42,13 @@ describe "管理者による職員管理" do
         let(:params_hash) { attributes_for(:staff_member) }
 
         example "職員一覧ページにリダイレクト" do
-            pending('保留 4/15')
+            # pending('保留 4/15')
             post admin_staff_members_url, params: { staff_member: params_hash }
             expect(response).to redirect_to(admin_staff_members_url)
         end
 
         example "例外 ActionController::ParameterMissingが発生" do
-            pending('保留 4/15')
+            # pending('保留 4/15')
             expect { post admin_staff_members_url }.
                 to raise_error(ActionController::ParameterMissing)
         end
@@ -59,7 +59,7 @@ describe "管理者による職員管理" do
         let(:params_hash) { attributes_for(:staff_member) }
 
         example "suspended フラグをセットする" do
-            pending('保留 4/15')
+            # pending('保留 4/15')
             params_hash.merge!(suspended: true)
             patch admin_staff_member_url(staff_member),
                 params: { staff_member: params_hash }
@@ -68,7 +68,7 @@ describe "管理者による職員管理" do
         end
 
         example "hashed_passwordの値は書き換え不可" do
-            pending('保留 4/15')
+            # pending('保留 4/15')
             params_hash.delete(:password)
             params_hash.merge!(hashed_password: "x")
             expect {

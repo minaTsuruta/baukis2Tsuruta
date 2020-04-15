@@ -27,7 +27,7 @@ class Staff::Base < ApplicationController
         end
     end
 
-    TIMEOUT = 60.minutes
+    TIMEOUT = 10.minutes
 
     private def check_timeout
         if current_staff_member
