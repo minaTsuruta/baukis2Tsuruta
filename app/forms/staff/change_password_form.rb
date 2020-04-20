@@ -13,8 +13,8 @@ class Staff::ChangePasswordForm
 
     def save
         if valid?
-            obejct.password = new_password
-            obejct.save!
+            object.password = new_password
+            object.save!
         end
     end
 end
