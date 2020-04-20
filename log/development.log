@@ -24189,3 +24189,1555 @@ puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
 puma (4.3.3) lib/puma/server.rb:472:in `process_client'
 puma (4.3.3) lib/puma/server.rb:328:in `block in run'
 puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started DELETE "/customers/51" for 172.18.0.1 at 2020-04-20 02:52:32 +0000
+  
+AbstractController::ActionNotFound (The action 'destroy' could not be found for Staff::CustomersController):
+  
+actionpack (6.0.2.2) lib/abstract_controller/base.rb:131:in `process'
+actionview (6.0.2.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.2.2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.2.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.2.2) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.2.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/customers?page=2" for 172.18.0.1 at 2020-04-20 02:56:17 +0000
+Processing by Staff::CustomersController#index as HTML
+  Parameters: {"page"=>"2", "host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (98.0ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+Redirected to http://baukis2.example.com:3000/login
+Filter chain halted as :check_timeout rendered or redirected
+Completed 302 Found in 140ms (ActiveRecord: 99.3ms | Allocations: 1137)
+
+
+Started GET "/login" for 172.18.0.1 at 2020-04-20 02:56:17 +0000
+Processing by Staff::SessionsController#new as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  Rendering staff/sessions/new.html.erb within layouts/staff
+  Rendered staff/sessions/new.html.erb within layouts/staff (Duration: 38.3ms | Allocations: 715)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered staff/shared/_header.html.erb (Duration: 2.5ms | Allocations: 106)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 5)
+Completed 200 OK in 2123ms (Views: 2037.3ms | ActiveRecord: 0.0ms | Allocations: 5659)
+
+
+Started POST "/session" for 172.18.0.1 at 2020-04-20 02:56:23 +0000
+Processing by Staff::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"FbcK7XzgQuIih+3/p+A2f4j3vB+jKbBtoFMk7iVUIfhtISNa7qJ7UcW8XwCN0SfmJk4XDZ/o7SfLzTFqx2FQ9w==", "staff_login_form"=>{"email"=>"taro@example.com", "password"=>"[FILTERED]"}, "commit"=>"ログイン", "host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (28.1ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE (LOWER(email) = 'taro@example.com') LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/staff/sessions_controller.rb:17:in `create'
+  [1m[35m (2.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/staff/sessions_controller.rb:27:in `create'
+  [1m[36mStaffMember Load (32.3ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/sessions_controller.rb:27:in `create'
+  [1m[36mStaffEvent Create (57.6ms)[0m  [1m[32mINSERT INTO "staff_events" ("staff_member_id", "type", "created_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["staff_member_id", 1], ["type", "logged_in"], ["created_at", "2020-04-20 02:56:26.426769"]]
+  ↳ app/controllers/staff/sessions_controller.rb:27:in `create'
+  [1m[35m (38.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/staff/sessions_controller.rb:27:in `create'
+Redirected to http://baukis2.example.com:3000/
+Completed 302 Found in 2345ms (ActiveRecord: 526.0ms | Allocations: 9695)
+
+
+Started GET "/" for 172.18.0.1 at 2020-04-20 02:56:26 +0000
+Processing by Staff::TopController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (8.4ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  Rendering staff/top/dashboard.html.erb within layouts/staff
+  Rendered staff/top/dashboard.html.erb within layouts/staff (Duration: 50.1ms | Allocations: 169)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered staff/shared/_header.html.erb (Duration: 2.0ms | Allocations: 144)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 1803ms (Views: 1757.1ms | ActiveRecord: 8.4ms | Allocations: 5442)
+
+
+Started GET "/customers" for 172.18.0.1 at 2020-04-20 02:56:30 +0000
+Processing by Staff::CustomersController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (4.8ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  Rendering staff/customers/index.html.erb within layouts/staff
+  [1m[35m (30.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "customers"[0m
+  ↳ app/views/staff/customers/index.html.erb:9
+  [1m[36mCustomer Load (11.9ms)[0m  [1m[34mSELECT "customers".* FROM "customers" ORDER BY "customers"."family_name_kana" ASC, "customers"."given_name_kana" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/staff/customers/index.html.erb:20
+  Rendered staff/customers/index.html.erb within layouts/staff (Duration: 130.3ms | Allocations: 13056)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered staff/shared/_header.html.erb (Duration: 1.8ms | Allocations: 125)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 1117ms (Views: 1052.9ms | ActiveRecord: 46.7ms | Allocations: 17996)
+
+
+Started GET "/customers?page=10" for 172.18.0.1 at 2020-04-20 02:56:33 +0000
+Processing by Staff::CustomersController#index as HTML
+  Parameters: {"page"=>"10", "host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (19.5ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  Rendering staff/customers/index.html.erb within layouts/staff
+  [1m[35m (15.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "customers"[0m
+  ↳ app/views/staff/customers/index.html.erb:9
+  [1m[36mCustomer Load (9.3ms)[0m  [1m[34mSELECT "customers".* FROM "customers" ORDER BY "customers"."family_name_kana" ASC, "customers"."given_name_kana" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 90]]
+  ↳ app/views/staff/customers/index.html.erb:20
+  Rendered staff/customers/index.html.erb within layouts/staff (Duration: 197.9ms | Allocations: 13098)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered staff/shared/_header.html.erb (Duration: 4.3ms | Allocations: 121)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 1624ms (Views: 1537.9ms | ActiveRecord: 44.0ms | Allocations: 18029)
+
+
+Started GET "/customers/41" for 172.18.0.1 at 2020-04-20 02:56:36 +0000
+Processing by Staff::CustomersController#show as HTML
+  Parameters: {"host"=>"baukis2.example.com", "id"=>"41"}
+  [1m[36mStaffMember Load (13.6ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  [1m[36mCustomer Load (18.9ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/controllers/staff/customers_controller.rb:8:in `show'
+  Rendering staff/customers/show.html.erb within layouts/staff
+  [1m[36mHomeAddress Load (33.2ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses" WHERE "addresses"."type" = $1 AND "addresses"."customer_id" = $2 LIMIT $3[0m  [["type", "HomeAddress"], ["customer_id", 41], ["LIMIT", 1]]
+  ↳ app/views/staff/customers/show.html.erb:14
+  [1m[36mWorkAddress Load (153.1ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses" WHERE "addresses"."type" = $1 AND "addresses"."customer_id" = $2 LIMIT $3[0m  [["type", "WorkAddress"], ["customer_id", 41], ["LIMIT", 1]]
+  ↳ app/views/staff/customers/show.html.erb:23
+  Rendered staff/customers/show.html.erb within layouts/staff (Duration: 228.2ms | Allocations: 1816)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered staff/shared/_header.html.erb (Duration: 2.4ms | Allocations: 128)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 1448ms (Views: 1159.8ms | ActiveRecord: 218.8ms | Allocations: 7327)
+
+
+Started GET "/customers/45" for 172.18.0.1 at 2020-04-20 02:56:45 +0000
+Processing by Staff::CustomersController#show as HTML
+  Parameters: {"host"=>"baukis2.example.com", "id"=>"45"}
+  [1m[36mStaffMember Load (1.6ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  [1m[36mCustomer Load (16.2ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 45], ["LIMIT", 1]]
+  ↳ app/controllers/staff/customers_controller.rb:8:in `show'
+  Rendering staff/customers/show.html.erb within layouts/staff
+  [1m[36mHomeAddress Load (10.1ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses" WHERE "addresses"."type" = $1 AND "addresses"."customer_id" = $2 LIMIT $3[0m  [["type", "HomeAddress"], ["customer_id", 45], ["LIMIT", 1]]
+  ↳ app/views/staff/customers/show.html.erb:14
+  [1m[36mWorkAddress Load (13.0ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses" WHERE "addresses"."type" = $1 AND "addresses"."customer_id" = $2 LIMIT $3[0m  [["type", "WorkAddress"], ["customer_id", 45], ["LIMIT", 1]]
+  ↳ app/views/staff/customers/show.html.erb:23
+  Rendered staff/customers/show.html.erb within layouts/staff (Duration: 58.7ms | Allocations: 1744)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered staff/shared/_header.html.erb (Duration: 0.5ms | Allocations: 128)
+  Rendered shared/_footer.html.erb (Duration: 2.2ms | Allocations: 5)
+Completed 200 OK in 1031ms (Views: 954.1ms | ActiveRecord: 40.8ms | Allocations: 7249)
+
+
+Started GET "/customers/46" for 172.18.0.1 at 2020-04-20 02:56:52 +0000
+Processing by Staff::CustomersController#show as HTML
+  Parameters: {"host"=>"baukis2.example.com", "id"=>"46"}
+  [1m[36mStaffMember Load (1.1ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  [1m[36mCustomer Load (4.5ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 46], ["LIMIT", 1]]
+  ↳ app/controllers/staff/customers_controller.rb:8:in `show'
+  Rendering staff/customers/show.html.erb within layouts/staff
+  [1m[36mHomeAddress Load (5.2ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses" WHERE "addresses"."type" = $1 AND "addresses"."customer_id" = $2 LIMIT $3[0m  [["type", "HomeAddress"], ["customer_id", 46], ["LIMIT", 1]]
+  ↳ app/views/staff/customers/show.html.erb:14
+  [1m[36mWorkAddress Load (10.6ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses" WHERE "addresses"."type" = $1 AND "addresses"."customer_id" = $2 LIMIT $3[0m  [["type", "WorkAddress"], ["customer_id", 46], ["LIMIT", 1]]
+  ↳ app/views/staff/customers/show.html.erb:23
+  Rendered staff/customers/show.html.erb within layouts/staff (Duration: 100.9ms | Allocations: 1745)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered staff/shared/_header.html.erb (Duration: 0.4ms | Allocations: 128)
+  Rendered shared/_footer.html.erb (Duration: 2.5ms | Allocations: 5)
+Completed 200 OK in 1139ms (Views: 1078.1ms | ActiveRecord: 21.5ms | Allocations: 7253)
+
+
+Started GET "/customers/47" for 172.18.0.1 at 2020-04-20 02:56:57 +0000
+Processing by Staff::CustomersController#show as HTML
+  Parameters: {"host"=>"baukis2.example.com", "id"=>"47"}
+  [1m[36mStaffMember Load (1.0ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  [1m[36mCustomer Load (9.6ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 47], ["LIMIT", 1]]
+  ↳ app/controllers/staff/customers_controller.rb:8:in `show'
+  Rendering staff/customers/show.html.erb within layouts/staff
+  [1m[36mHomeAddress Load (13.7ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses" WHERE "addresses"."type" = $1 AND "addresses"."customer_id" = $2 LIMIT $3[0m  [["type", "HomeAddress"], ["customer_id", 47], ["LIMIT", 1]]
+  ↳ app/views/staff/customers/show.html.erb:14
+  [1m[36mWorkAddress Load (3.7ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses" WHERE "addresses"."type" = $1 AND "addresses"."customer_id" = $2 LIMIT $3[0m  [["type", "WorkAddress"], ["customer_id", 47], ["LIMIT", 1]]
+  ↳ app/views/staff/customers/show.html.erb:23
+  Rendered staff/customers/show.html.erb within layouts/staff (Duration: 58.7ms | Allocations: 1808)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered staff/shared/_header.html.erb (Duration: 0.7ms | Allocations: 128)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 1285ms (Views: 1211.3ms | ActiveRecord: 28.1ms | Allocations: 7311)
+
+
+Started GET "/customers/new" for 172.18.0.1 at 2020-04-20 02:57:18 +0000
+  
+AbstractController::ActionNotFound (The action 'new' could not be found for Staff::CustomersController):
+  
+actionpack (6.0.2.2) lib/abstract_controller/base.rb:131:in `process'
+actionview (6.0.2.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.2.2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.2.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.2.2) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.2.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/customers?page=10" for 172.18.0.1 at 2020-04-20 04:43:58 +0000
+Processing by Staff::CustomersController#index as HTML
+  Parameters: {"page"=>"10", "host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (276.4ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+Redirected to http://baukis2.example.com:3000/login
+Filter chain halted as :check_timeout rendered or redirected
+Completed 302 Found in 1703ms (ActiveRecord: 283.6ms | Allocations: 9995)
+
+
+Started GET "/login" for 172.18.0.1 at 2020-04-20 04:44:05 +0000
+Processing by Staff::SessionsController#new as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  Rendering staff/sessions/new.html.erb within layouts/staff
+  Rendered staff/sessions/new.html.erb within layouts/staff (Duration: 28.2ms | Allocations: 707)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered staff/shared/_header.html.erb (Duration: 40.9ms | Allocations: 285)
+  Rendered shared/_footer.html.erb (Duration: 15.2ms | Allocations: 81)
+Completed 200 OK in 772ms (Views: 654.8ms | ActiveRecord: 0.0ms | Allocations: 6537)
+
+
+Started POST "/session" for 172.18.0.1 at 2020-04-20 04:45:30 +0000
+Processing by Staff::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"0zAydDQcUdH6SmwHgF5lw3uE7NmkuLDEyhOJy2wRtPnC3oSoidlmkN2LAM+NBAmV7YhuCLjy1acsHBr4BOBUJA==", "staff_login_form"=>{"email"=>"taro@example.com", "password"=>"[FILTERED]"}, "commit"=>"ログイン", "host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (29.7ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE (LOWER(email) = 'taro@example.com') LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/staff/sessions_controller.rb:17:in `create'
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/staff/sessions_controller.rb:27:in `create'
+  [1m[36mStaffMember Load (9.8ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/sessions_controller.rb:27:in `create'
+  [1m[36mStaffEvent Create (29.7ms)[0m  [1m[32mINSERT INTO "staff_events" ("staff_member_id", "type", "created_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["staff_member_id", 1], ["type", "logged_in"], ["created_at", "2020-04-20 04:45:32.394070"]]
+  ↳ app/controllers/staff/sessions_controller.rb:27:in `create'
+  [1m[35m (16.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/staff/sessions_controller.rb:27:in `create'
+Redirected to http://baukis2.example.com:3000/
+Completed 302 Found in 1561ms (ActiveRecord: 86.4ms | Allocations: 11306)
+
+
+Started GET "/" for 172.18.0.1 at 2020-04-20 04:45:32 +0000
+Processing by Staff::TopController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (9.1ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  Rendering staff/top/dashboard.html.erb within layouts/staff
+  Rendered staff/top/dashboard.html.erb within layouts/staff (Duration: 33.2ms | Allocations: 164)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered staff/shared/_header.html.erb (Duration: 17.8ms | Allocations: 323)
+  Rendered shared/_footer.html.erb (Duration: 9.9ms | Allocations: 81)
+Completed 200 OK in 1582ms (Views: 1554.2ms | ActiveRecord: 9.1ms | Allocations: 6354)
+
+
+Started GET "/customers" for 172.18.0.1 at 2020-04-20 04:45:37 +0000
+Processing by Staff::CustomersController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (9.6ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  Rendering staff/customers/index.html.erb within layouts/staff
+  [1m[35m (60.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "customers"[0m
+  ↳ app/views/staff/customers/index.html.erb:9
+  [1m[36mCustomer Load (5.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" ORDER BY "customers"."family_name_kana" ASC, "customers"."given_name_kana" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/staff/customers/index.html.erb:20
+  Rendered staff/customers/index.html.erb within layouts/staff (Duration: 1087.7ms | Allocations: 22646)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered staff/shared/_header.html.erb (Duration: 0.4ms | Allocations: 125)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 2037ms (Views: 1819.0ms | ActiveRecord: 74.9ms | Allocations: 29025)
+
+
+Started GET "/customers/51" for 172.18.0.1 at 2020-04-20 04:45:40 +0000
+Processing by Staff::CustomersController#show as HTML
+  Parameters: {"host"=>"baukis2.example.com", "id"=>"51"}
+  [1m[36mStaffMember Load (9.6ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  [1m[36mCustomer Load (11.4ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 51], ["LIMIT", 1]]
+  ↳ app/controllers/staff/customers_controller.rb:8:in `show'
+  Rendering staff/customers/show.html.erb within layouts/staff
+  [1m[36mHomeAddress Load (30.2ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses" WHERE "addresses"."type" = $1 AND "addresses"."customer_id" = $2 LIMIT $3[0m  [["type", "HomeAddress"], ["customer_id", 51], ["LIMIT", 1]]
+  ↳ app/views/staff/customers/show.html.erb:14
+  [1m[36mWorkAddress Load (16.2ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses" WHERE "addresses"."type" = $1 AND "addresses"."customer_id" = $2 LIMIT $3[0m  [["type", "WorkAddress"], ["customer_id", 51], ["LIMIT", 1]]
+  ↳ app/views/staff/customers/show.html.erb:23
+  Rendered staff/customers/show.html.erb within layouts/staff (Duration: 416.8ms | Allocations: 26713)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered staff/shared/_header.html.erb (Duration: 0.7ms | Allocations: 137)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 5)
+Completed 200 OK in 1619ms (Views: 1501.0ms | ActiveRecord: 67.3ms | Allocations: 32393)
+
+
+Started GET "/customers/51/edit" for 172.18.0.1 at 2020-04-20 04:45:45 +0000
+Processing by Staff::CustomersController#edit as HTML
+  Parameters: {"host"=>"baukis2.example.com", "id"=>"51"}
+  [1m[36mStaffMember Load (12.5ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  [1m[36mCustomer Load (24.4ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 51], ["LIMIT", 1]]
+  ↳ app/controllers/staff/customers_controller.rb:16:in `edit'
+Completed 500 Internal Server Error in 425ms (ActiveRecord: 36.9ms | Allocations: 4119)
+
+
+  
+NoMethodError (undefined method `home' for #<Customer:0x000055c3a13a6cd0>):
+  
+app/forms/staff/customer_form.rb:10:in `initialize'
+app/controllers/staff/customers_controller.rb:16:in `new'
+app/controllers/staff/customers_controller.rb:16:in `edit'
+Started GET "/customers" for 172.18.0.1 at 2020-04-20 04:58:55 +0000
+Processing by Staff::CustomersController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (38.2ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+Redirected to http://baukis2.example.com:3000/login
+Filter chain halted as :check_timeout rendered or redirected
+Completed 302 Found in 75ms (ActiveRecord: 41.2ms | Allocations: 1128)
+
+
+Started GET "/login" for 172.18.0.1 at 2020-04-20 04:58:56 +0000
+Processing by Staff::SessionsController#new as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  Rendering staff/sessions/new.html.erb within layouts/staff
+  Rendered staff/sessions/new.html.erb within layouts/staff (Duration: 14.6ms | Allocations: 591)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered staff/shared/_header.html.erb (Duration: 19.1ms | Allocations: 285)
+  Rendered shared/_footer.html.erb (Duration: 14.0ms | Allocations: 81)
+Completed 200 OK in 497ms (Views: 492.0ms | ActiveRecord: 0.0ms | Allocations: 6091)
+
+
+Started POST "/session" for 172.18.0.1 at 2020-04-20 04:58:59 +0000
+Processing by Staff::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"NRjQZ+8eFSoYtL0c4JUrwEY7z+QZyXh/cBAm232407sk9ma7Utsiaz910dTtz0eW0DdNNQWDHRyWH7XoFUkzZg==", "staff_login_form"=>{"email"=>"taro@example.com", "password"=>"[FILTERED]"}, "commit"=>"ログイン", "host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (7.0ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE (LOWER(email) = 'taro@example.com') LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/staff/sessions_controller.rb:17:in `create'
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/staff/sessions_controller.rb:27:in `create'
+  [1m[36mStaffMember Load (4.4ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/sessions_controller.rb:27:in `create'
+  [1m[36mStaffEvent Create (11.1ms)[0m  [1m[32mINSERT INTO "staff_events" ("staff_member_id", "type", "created_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["staff_member_id", 1], ["type", "logged_in"], ["created_at", "2020-04-20 04:59:00.532299"]]
+  ↳ app/controllers/staff/sessions_controller.rb:27:in `create'
+  [1m[35m (8.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/staff/sessions_controller.rb:27:in `create'
+Redirected to http://baukis2.example.com:3000/
+Completed 302 Found in 572ms (ActiveRecord: 31.8ms | Allocations: 4986)
+
+
+Started GET "/" for 172.18.0.1 at 2020-04-20 04:59:00 +0000
+Processing by Staff::TopController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (10.8ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  Rendering staff/top/dashboard.html.erb within layouts/staff
+  Rendered staff/top/dashboard.html.erb within layouts/staff (Duration: 16.3ms | Allocations: 163)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered staff/shared/_header.html.erb (Duration: 0.5ms | Allocations: 144)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 5)
+Completed 200 OK in 513ms (Views: 492.6ms | ActiveRecord: 10.8ms | Allocations: 5409)
+
+
+Started GET "/customers" for 172.18.0.1 at 2020-04-20 04:59:04 +0000
+Processing by Staff::CustomersController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (6.6ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  Rendering staff/customers/index.html.erb within layouts/staff
+  [1m[35m (10.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "customers"[0m
+  ↳ app/views/staff/customers/index.html.erb:9
+  [1m[36mCustomer Load (7.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" ORDER BY "customers"."family_name_kana" ASC, "customers"."given_name_kana" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/staff/customers/index.html.erb:20
+  Rendered staff/customers/index.html.erb within layouts/staff (Duration: 230.4ms | Allocations: 15631)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered staff/shared/_header.html.erb (Duration: 0.4ms | Allocations: 125)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 447ms (Views: 391.8ms | ActiveRecord: 24.3ms | Allocations: 20865)
+
+
+Started GET "/customers/51/edit" for 172.18.0.1 at 2020-04-20 04:59:07 +0000
+Processing by Staff::CustomersController#edit as HTML
+  Parameters: {"host"=>"baukis2.example.com", "id"=>"51"}
+  [1m[36mStaffMember Load (6.4ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  [1m[36mCustomer Load (10.7ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 51], ["LIMIT", 1]]
+  ↳ app/controllers/staff/customers_controller.rb:16:in `edit'
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 17.1ms | Allocations: 3673)
+
+
+  
+NoMethodError (undefined method `home' for #<Customer:0x000055c3a285e808>):
+  
+app/forms/staff/customer_form.rb:10:in `initialize'
+app/controllers/staff/customers_controller.rb:16:in `new'
+app/controllers/staff/customers_controller.rb:16:in `edit'
+Started GET "/customers/51/edit" for 172.18.0.1 at 2020-04-20 05:05:54 +0000
+Started GET "/customers" for 172.18.0.1 at 2020-04-20 05:05:57 +0000
+Processing by Staff::CustomersController#edit as HTML
+  Parameters: {"host"=>"baukis2.example.com", "id"=>"51"}
+  [1m[36mStaffMember Load (53.2ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  [1m[36mCustomer Load (45.8ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 51], ["LIMIT", 1]]
+  ↳ app/controllers/staff/customers_controller.rb:16:in `edit'
+  [1m[36mHomeAddress Load (113.1ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses" WHERE "addresses"."type" = $1 AND "addresses"."customer_id" = $2 LIMIT $3[0m  [["type", "HomeAddress"], ["customer_id", 51], ["LIMIT", 1]]
+  ↳ app/forms/staff/customer_form.rb:10:in `initialize'
+  [1m[36mWorkAddress Load (7.0ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses" WHERE "addresses"."type" = $1 AND "addresses"."customer_id" = $2 LIMIT $3[0m  [["type", "WorkAddress"], ["customer_id", 51], ["LIMIT", 1]]
+  ↳ app/forms/staff/customer_form.rb:11:in `initialize'
+  Rendering staff/customers/edit.html.erb within layouts/staff
+  Rendered staff/customers/_customer_fields.html.erb (Duration: 3120.3ms | Allocations: 267768)
+  Rendered staff/customers/_form.html.erb (Duration: 3544.3ms | Allocations: 269027)
+  Rendered staff/customers/edit.html.erb within layouts/staff (Duration: 3654.8ms | Allocations: 269477)
+Completed 500 Internal Server Error in 4877ms (ActiveRecord: 219.9ms | Allocations: 313363)
+
+
+  
+ActionView::Template::Error (undefined method `full_name_block' for #<CustomerFormPresenter:0x000055c3a166aea8>):
+    4:         p.with_options(required: true) do |q|
+    5:             m << q.text_field_block(:email, "メールアドレス", size: 32)
+    6:             m << q.password_field_block(:password, "パスワード", size: 32)
+    7:             m << q.full_name_block(:family_name, :given_name, "氏名")
+    8:             m << q.full_name_block(:family_name_kana, :given_name_kana, "フリガナ")
+    9:         end
+   10:         m << p.date_field_block(:birthday, "生年月日")
+  
+app/views/staff/customers/_customer_fields.html.erb:7
+app/views/staff/customers/_customer_fields.html.erb:4
+app/lib/html_builder.rb:10:in `block in markup'
+app/lib/html_builder.rb:4:in `markup'
+app/views/staff/customers/_customer_fields.html.erb:2
+app/views/staff/customers/_customer_fields.html.erb:1
+app/views/staff/customers/_form.html.erb:4
+app/views/staff/customers/edit.html.erb:7
+app/views/staff/customers/edit.html.erb:5
+Processing by Staff::CustomersController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (32.0ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  Rendering staff/customers/index.html.erb within layouts/staff
+  [1m[35m (15.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "customers"[0m
+  ↳ app/views/staff/customers/index.html.erb:9
+  [1m[36mCustomer Load (11.2ms)[0m  [1m[34mSELECT "customers".* FROM "customers" ORDER BY "customers"."family_name_kana" ASC, "customers"."given_name_kana" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/staff/customers/index.html.erb:20
+  Rendered staff/customers/index.html.erb within layouts/staff (Duration: 266.5ms | Allocations: 20072)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered staff/shared/_header.html.erb (Duration: 1.7ms | Allocations: 125)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 1978ms (Views: 1458.9ms | ActiveRecord: 272.0ms | Allocations: 35907)
+
+
+Started GET "/customers/51/edit" for 172.18.0.1 at 2020-04-20 05:06:18 +0000
+Processing by Staff::CustomersController#edit as HTML
+  Parameters: {"host"=>"baukis2.example.com", "id"=>"51"}
+  [1m[36mStaffMember Load (3.3ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  [1m[36mCustomer Load (5.7ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 51], ["LIMIT", 1]]
+  ↳ app/controllers/staff/customers_controller.rb:16:in `edit'
+  [1m[36mHomeAddress Load (10.7ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses" WHERE "addresses"."type" = $1 AND "addresses"."customer_id" = $2 LIMIT $3[0m  [["type", "HomeAddress"], ["customer_id", 51], ["LIMIT", 1]]
+  ↳ app/forms/staff/customer_form.rb:10:in `initialize'
+  [1m[36mWorkAddress Load (6.6ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses" WHERE "addresses"."type" = $1 AND "addresses"."customer_id" = $2 LIMIT $3[0m  [["type", "WorkAddress"], ["customer_id", 51], ["LIMIT", 1]]
+  ↳ app/forms/staff/customer_form.rb:11:in `initialize'
+  Rendering staff/customers/edit.html.erb within layouts/staff
+  Rendered staff/customers/_customer_fields.html.erb (Duration: 1835.2ms | Allocations: 267570)
+  Rendered staff/customers/_form.html.erb (Duration: 1882.5ms | Allocations: 268231)
+  Rendered staff/customers/edit.html.erb within layouts/staff (Duration: 1888.0ms | Allocations: 268320)
+Completed 500 Internal Server Error in 2221ms (ActiveRecord: 59.8ms | Allocations: 296180)
+
+
+  
+ActionView::Template::Error (undefined method `full_name_block' for #<CustomerFormPresenter:0x000055c3a233cb18>):
+    4:         p.with_options(required: true) do |q|
+    5:             m << q.text_field_block(:email, "メールアドレス", size: 32)
+    6:             m << q.password_field_block(:password, "パスワード", size: 32)
+    7:             m << q.full_name_block(:family_name, :given_name, "氏名")
+    8:             m << q.full_name_block(:family_name_kana, :given_name_kana, "フリガナ")
+    9:         end
+   10:         m << p.date_field_block(:birthday, "生年月日")
+  
+app/views/staff/customers/_customer_fields.html.erb:7
+app/views/staff/customers/_customer_fields.html.erb:4
+app/lib/html_builder.rb:10:in `block in markup'
+app/lib/html_builder.rb:4:in `markup'
+app/views/staff/customers/_customer_fields.html.erb:2
+app/views/staff/customers/_customer_fields.html.erb:1
+app/views/staff/customers/_form.html.erb:4
+app/views/staff/customers/edit.html.erb:7
+app/views/staff/customers/edit.html.erb:5
+Started GET "/customers" for 172.18.0.1 at 2020-04-20 05:08:56 +0000
+Processing by Staff::CustomersController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (3.5ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  Rendering staff/customers/index.html.erb within layouts/staff
+  [1m[35m (7.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "customers"[0m
+  ↳ app/views/staff/customers/index.html.erb:9
+  [1m[36mCustomer Load (5.7ms)[0m  [1m[34mSELECT "customers".* FROM "customers" ORDER BY "customers"."family_name_kana" ASC, "customers"."given_name_kana" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/staff/customers/index.html.erb:20
+  Rendered staff/customers/index.html.erb within layouts/staff (Duration: 290.6ms | Allocations: 20096)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered staff/shared/_header.html.erb (Duration: 0.3ms | Allocations: 125)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 5)
+Completed 200 OK in 1583ms (Views: 1215.8ms | ActiveRecord: 125.3ms | Allocations: 35878)
+
+
+Started GET "/customers/51/edit" for 172.18.0.1 at 2020-04-20 05:09:02 +0000
+Processing by Staff::CustomersController#edit as HTML
+  Parameters: {"host"=>"baukis2.example.com", "id"=>"51"}
+  [1m[36mStaffMember Load (10.8ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  [1m[36mCustomer Load (11.2ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 51], ["LIMIT", 1]]
+  ↳ app/controllers/staff/customers_controller.rb:16:in `edit'
+  [1m[36mHomeAddress Load (9.6ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses" WHERE "addresses"."type" = $1 AND "addresses"."customer_id" = $2 LIMIT $3[0m  [["type", "HomeAddress"], ["customer_id", 51], ["LIMIT", 1]]
+  ↳ app/forms/staff/customer_form.rb:10:in `initialize'
+  [1m[36mWorkAddress Load (10.7ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses" WHERE "addresses"."type" = $1 AND "addresses"."customer_id" = $2 LIMIT $3[0m  [["type", "WorkAddress"], ["customer_id", 51], ["LIMIT", 1]]
+  ↳ app/forms/staff/customer_form.rb:11:in `initialize'
+  Rendering staff/customers/edit.html.erb within layouts/staff
+  Rendered staff/customers/_customer_fields.html.erb (Duration: 1938.5ms | Allocations: 267644)
+  Rendered staff/customers/_form.html.erb (Duration: 1982.5ms | Allocations: 268303)
+  Rendered staff/customers/edit.html.erb within layouts/staff (Duration: 1987.4ms | Allocations: 268392)
+Completed 500 Internal Server Error in 2337ms (ActiveRecord: 77.8ms | Allocations: 296258)
+
+
+  
+ActionView::Template::Error (undefined method `full_name_block' for #<CustomerFormPresenter:0x000055c3a1693420>):
+    4:         p.with_options(required: true) do |q|
+    5:             m << q.text_field_block(:email, "メールアドレス", size: 32)
+    6:             m << q.password_field_block(:password, "パスワード", size: 32)
+    7:             m << q.full_name_block(:family_name, :given_name, "氏名")
+    8:             m << q.full_name_block(:family_name_kana, :given_name_kana, "フリガナ")
+    9:         end
+   10:         m << p.date_field_block(:birthday, "生年月日")
+  
+app/views/staff/customers/_customer_fields.html.erb:7
+app/views/staff/customers/_customer_fields.html.erb:4
+app/lib/html_builder.rb:10:in `block in markup'
+app/lib/html_builder.rb:4:in `markup'
+app/views/staff/customers/_customer_fields.html.erb:2
+app/views/staff/customers/_customer_fields.html.erb:1
+app/views/staff/customers/_form.html.erb:4
+app/views/staff/customers/edit.html.erb:7
+app/views/staff/customers/edit.html.erb:5
+Started GET "/customers" for 172.18.0.1 at 2020-04-20 05:10:56 +0000
+Processing by Staff::CustomersController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (8.1ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  Rendering staff/customers/index.html.erb within layouts/staff
+  [1m[35m (31.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "customers"[0m
+  ↳ app/views/staff/customers/index.html.erb:9
+  [1m[36mCustomer Load (8.4ms)[0m  [1m[34mSELECT "customers".* FROM "customers" ORDER BY "customers"."family_name_kana" ASC, "customers"."given_name_kana" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/staff/customers/index.html.erb:20
+  Rendered staff/customers/index.html.erb within layouts/staff (Duration: 657.8ms | Allocations: 15628)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered staff/shared/_header.html.erb (Duration: 36.1ms | Allocations: 304)
+  Rendered shared/_footer.html.erb (Duration: 12.1ms | Allocations: 81)
+Completed 200 OK in 1934ms (Views: 1813.6ms | ActiveRecord: 48.1ms | Allocations: 21799)
+
+
+Started GET "/customers/51/edit" for 172.18.0.1 at 2020-04-20 05:11:00 +0000
+Processing by Staff::CustomersController#edit as HTML
+  Parameters: {"host"=>"baukis2.example.com", "id"=>"51"}
+  [1m[36mStaffMember Load (0.8ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  [1m[36mCustomer Load (13.2ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 51], ["LIMIT", 1]]
+  ↳ app/controllers/staff/customers_controller.rb:16:in `edit'
+  [1m[36mHomeAddress Load (4.5ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses" WHERE "addresses"."type" = $1 AND "addresses"."customer_id" = $2 LIMIT $3[0m  [["type", "HomeAddress"], ["customer_id", 51], ["LIMIT", 1]]
+  ↳ app/forms/staff/customer_form.rb:10:in `initialize'
+  [1m[36mWorkAddress Load (1.8ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses" WHERE "addresses"."type" = $1 AND "addresses"."customer_id" = $2 LIMIT $3[0m  [["type", "WorkAddress"], ["customer_id", 51], ["LIMIT", 1]]
+  ↳ app/forms/staff/customer_form.rb:11:in `initialize'
+  Rendering staff/customers/edit.html.erb within layouts/staff
+  Rendered staff/customers/_customer_fields.html.erb (Duration: 1799.7ms | Allocations: 267736)
+  Rendered staff/customers/_form.html.erb (Duration: 1841.1ms | Allocations: 268240)
+  Rendered staff/customers/edit.html.erb within layouts/staff (Duration: 1890.2ms | Allocations: 268677)
+Completed 500 Internal Server Error in 2017ms (ActiveRecord: 20.3ms | Allocations: 272097)
+
+
+  
+ActionView::Template::Error (undefined method `full_name_block' for #<CustomerFormPresenter:0x000055c3a29a30d8>):
+    4:         p.with_options(required: true) do |q|
+    5:             m << q.text_field_block(:email, "メールアドレス", size: 32)
+    6:             m << q.password_field_block(:password, "パスワード", size: 32)
+    7:             m << q.full_name_block(:family_name, :given_name, "氏名")
+    8:             m << q.full_name_kana_block(:family_name_kana, :given_name_kana, "フリガナ")
+    9:         end
+   10:         m << p.date_field_block(:birthday, "生年月日")
+  
+app/views/staff/customers/_customer_fields.html.erb:7
+app/views/staff/customers/_customer_fields.html.erb:4
+app/lib/html_builder.rb:10:in `block in markup'
+app/lib/html_builder.rb:4:in `markup'
+app/views/staff/customers/_customer_fields.html.erb:2
+app/views/staff/customers/_customer_fields.html.erb:1
+app/views/staff/customers/_form.html.erb:4
+app/views/staff/customers/edit.html.erb:7
+app/views/staff/customers/edit.html.erb:5
+Started GET "/customers" for 172.18.0.1 at 2020-04-20 05:13:57 +0000
+Processing by Staff::CustomersController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (0.8ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  Rendering staff/customers/index.html.erb within layouts/staff
+  [1m[35m (29.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "customers"[0m
+  ↳ app/views/staff/customers/index.html.erb:9
+  [1m[36mCustomer Load (4.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" ORDER BY "customers"."family_name_kana" ASC, "customers"."given_name_kana" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/staff/customers/index.html.erb:20
+  Rendered staff/customers/index.html.erb within layouts/staff (Duration: 426.6ms | Allocations: 22646)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered staff/shared/_header.html.erb (Duration: 5.8ms | Allocations: 304)
+  Rendered shared/_footer.html.erb (Duration: 18.6ms | Allocations: 81)
+Completed 200 OK in 1654ms (Views: 1287.9ms | ActiveRecord: 142.7ms | Allocations: 39489)
+
+
+Started GET "/customers/51/edit" for 172.18.0.1 at 2020-04-20 05:15:37 +0000
+Processing by Staff::CustomersController#edit as HTML
+  Parameters: {"host"=>"baukis2.example.com", "id"=>"51"}
+  [1m[36mStaffMember Load (1.0ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  [1m[36mCustomer Load (5.7ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 51], ["LIMIT", 1]]
+  ↳ app/controllers/staff/customers_controller.rb:16:in `edit'
+  [1m[36mHomeAddress Load (1.6ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses" WHERE "addresses"."type" = $1 AND "addresses"."customer_id" = $2 LIMIT $3[0m  [["type", "HomeAddress"], ["customer_id", 51], ["LIMIT", 1]]
+  ↳ app/forms/staff/customer_form.rb:10:in `initialize'
+  [1m[36mWorkAddress Load (3.1ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses" WHERE "addresses"."type" = $1 AND "addresses"."customer_id" = $2 LIMIT $3[0m  [["type", "WorkAddress"], ["customer_id", 51], ["LIMIT", 1]]
+  ↳ app/forms/staff/customer_form.rb:11:in `initialize'
+  Rendering staff/customers/edit.html.erb within layouts/staff
+  Rendered staff/customers/_customer_fields.html.erb (Duration: 1534.9ms | Allocations: 267730)
+  Rendered staff/customers/_form.html.erb (Duration: 1595.2ms | Allocations: 268683)
+  Rendered staff/customers/edit.html.erb within layouts/staff (Duration: 1633.4ms | Allocations: 269118)
+Completed 500 Internal Server Error in 2020ms (ActiveRecord: 48.8ms | Allocations: 299094)
+
+
+  
+ActionView::Template::Error (undefined method `full_name_block' for #<CustomerFormPresenter:0x000055c3a236ea78>):
+    4:         p.with_options(required: true) do |q|
+    5:             m << q.text_field_block(:email, "メールアドレス", size: 32)
+    6:             m << q.password_field_block(:password, "パスワード", size: 32)
+    7:             m << q.full_name_block(:family_name, :given_name, "氏名")
+    8:             m << q.full_name_block(:family_name_kana, :given_name_kana, "フリガナ")
+    9:         end
+   10:         m << p.date_field_block(:birthday, "生年月日")
+  
+app/views/staff/customers/_customer_fields.html.erb:7
+app/views/staff/customers/_customer_fields.html.erb:4
+app/lib/html_builder.rb:10:in `block in markup'
+app/lib/html_builder.rb:4:in `markup'
+app/views/staff/customers/_customer_fields.html.erb:2
+app/views/staff/customers/_customer_fields.html.erb:1
+app/views/staff/customers/_form.html.erb:4
+app/views/staff/customers/edit.html.erb:7
+app/views/staff/customers/edit.html.erb:5
+Started GET "/customers" for 172.18.0.1 at 2020-04-20 05:23:23 +0000
+  [1m[35m (12.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Staff::CustomersController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (16.5ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  Rendering staff/customers/index.html.erb within layouts/staff
+  [1m[35m (52.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "customers"[0m
+  ↳ app/views/staff/customers/index.html.erb:9
+  [1m[36mCustomer Load (2.9ms)[0m  [1m[34mSELECT "customers".* FROM "customers" ORDER BY "customers"."family_name_kana" ASC, "customers"."given_name_kana" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/staff/customers/index.html.erb:20
+  Rendered staff/customers/index.html.erb within layouts/staff (Duration: 2863.3ms | Allocations: 112529)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered staff/shared/_header.html.erb (Duration: 19.3ms | Allocations: 317)
+  Rendered shared/_footer.html.erb (Duration: 21.4ms | Allocations: 84)
+Completed 200 OK in 5663ms (Views: 4843.7ms | ActiveRecord: 327.5ms | Allocations: 139654)
+
+
+Started GET "/customers/51/edit" for 172.18.0.1 at 2020-04-20 05:23:32 +0000
+Processing by Staff::CustomersController#edit as HTML
+  Parameters: {"host"=>"baukis2.example.com", "id"=>"51"}
+  [1m[36mStaffMember Load (7.4ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  [1m[36mCustomer Load (6.7ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 51], ["LIMIT", 1]]
+  ↳ app/controllers/staff/customers_controller.rb:16:in `edit'
+  [1m[36mHomeAddress Load (22.8ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses" WHERE "addresses"."type" = $1 AND "addresses"."customer_id" = $2 LIMIT $3[0m  [["type", "HomeAddress"], ["customer_id", 51], ["LIMIT", 1]]
+  ↳ app/forms/staff/customer_form.rb:10:in `initialize'
+  [1m[36mWorkAddress Load (6.2ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses" WHERE "addresses"."type" = $1 AND "addresses"."customer_id" = $2 LIMIT $3[0m  [["type", "WorkAddress"], ["customer_id", 51], ["LIMIT", 1]]
+  ↳ app/forms/staff/customer_form.rb:11:in `initialize'
+  Rendering staff/customers/edit.html.erb within layouts/staff
+  Rendered staff/customers/_customer_fields.html.erb (Duration: 1079.8ms | Allocations: 268432)
+  Rendered staff/customers/_form.html.erb (Duration: 1197.5ms | Allocations: 269467)
+  Rendered staff/customers/edit.html.erb within layouts/staff (Duration: 1227.7ms | Allocations: 269920)
+Completed 500 Internal Server Error in 1619ms (ActiveRecord: 76.9ms | Allocations: 299906)
+
+
+  
+ActionView::Template::Error (undefined method `full_name_block' for #<CustomerFormPresenter:0x00005630722866a0>):
+    4:         p.with_options(required: true) do |q|
+    5:             m << q.text_field_block(:email, "メールアドレス", size: 32)
+    6:             m << q.password_field_block(:password, "パスワード", size: 32)
+    7:             m << q.full_name_block(:family_name, :given_name, "氏名")
+    8:             m << q.full_name_block(:family_name_kana, :given_name_kana, "フリガナ")
+    9:         end
+   10:         m << p.date_field_block(:birthday, "生年月日")
+  
+app/views/staff/customers/_customer_fields.html.erb:7
+app/views/staff/customers/_customer_fields.html.erb:4
+app/lib/html_builder.rb:10:in `block in markup'
+app/lib/html_builder.rb:4:in `markup'
+app/views/staff/customers/_customer_fields.html.erb:2
+app/views/staff/customers/_customer_fields.html.erb:1
+app/views/staff/customers/_form.html.erb:4
+app/views/staff/customers/edit.html.erb:7
+app/views/staff/customers/edit.html.erb:5
+Started GET "/customers" for 172.18.0.1 at 2020-04-20 05:24:20 +0000
+Processing by Staff::CustomersController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (5.6ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  Rendering staff/customers/index.html.erb within layouts/staff
+  [1m[35m (5.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "customers"[0m
+  ↳ app/views/staff/customers/index.html.erb:9
+  [1m[36mCustomer Load (5.8ms)[0m  [1m[34mSELECT "customers".* FROM "customers" ORDER BY "customers"."family_name_kana" ASC, "customers"."given_name_kana" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/staff/customers/index.html.erb:20
+  Rendered staff/customers/index.html.erb within layouts/staff (Duration: 157.6ms | Allocations: 20083)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered staff/shared/_header.html.erb (Duration: 0.3ms | Allocations: 125)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 874ms (Views: 590.6ms | ActiveRecord: 94.4ms | Allocations: 36070)
+
+
+Started GET "/customers/51/edit" for 172.18.0.1 at 2020-04-20 05:24:26 +0000
+Processing by Staff::CustomersController#edit as HTML
+  Parameters: {"host"=>"baukis2.example.com", "id"=>"51"}
+  [1m[36mStaffMember Load (11.2ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  [1m[36mCustomer Load (10.3ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 51], ["LIMIT", 1]]
+  ↳ app/controllers/staff/customers_controller.rb:16:in `edit'
+  [1m[36mHomeAddress Load (5.0ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses" WHERE "addresses"."type" = $1 AND "addresses"."customer_id" = $2 LIMIT $3[0m  [["type", "HomeAddress"], ["customer_id", 51], ["LIMIT", 1]]
+  ↳ app/forms/staff/customer_form.rb:10:in `initialize'
+  [1m[36mWorkAddress Load (6.1ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses" WHERE "addresses"."type" = $1 AND "addresses"."customer_id" = $2 LIMIT $3[0m  [["type", "WorkAddress"], ["customer_id", 51], ["LIMIT", 1]]
+  ↳ app/forms/staff/customer_form.rb:11:in `initialize'
+  Rendering staff/customers/edit.html.erb within layouts/staff
+  Rendered staff/customers/_customer_fields.html.erb (Duration: 296.4ms | Allocations: 4185)
+  Rendered staff/customers/_home_address_fields.html.erb (Duration: 790.9ms | Allocations: 180879)
+  Rendered staff/customers/_form.html.erb (Duration: 1130.9ms | Allocations: 185932)
+  Rendered staff/customers/edit.html.erb within layouts/staff (Duration: 1135.0ms | Allocations: 186021)
+Completed 500 Internal Server Error in 1441ms (ActiveRecord: 62.5ms | Allocations: 213937)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `address' for #<#<Class:0x0000563071c067a8>:0x0000563070ad8968>):
+    3:         p = AddressFormPresenter.new(ff, self)
+    4:         p.with_options(required: true) do |q|
+    5:             m << q.postal_code_block(:postal_code, "郵便番号", size: 7)
+    6:             m << q.drop_down_list_block(:prefecture, "都道府県", address::PREFECTURE_NAMES)
+    7:             m << q.text_field_block(:city, "市区町村", size: 16)
+    8:             m << q.text_field_block(:address1, "町域、番地等", size: 40)
+    9:         end
+  
+app/views/staff/customers/_home_address_fields.html.erb:6
+app/views/staff/customers/_home_address_fields.html.erb:4
+app/lib/html_builder.rb:10:in `block in markup'
+app/lib/html_builder.rb:4:in `markup'
+app/views/staff/customers/_home_address_fields.html.erb:2
+app/views/staff/customers/_home_address_fields.html.erb:1
+app/views/staff/customers/_form.html.erb:8
+app/views/staff/customers/edit.html.erb:7
+app/views/staff/customers/edit.html.erb:5
+Started GET "/customers" for 172.18.0.1 at 2020-04-20 05:25:14 +0000
+Processing by Staff::CustomersController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (6.3ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  Rendering staff/customers/index.html.erb within layouts/staff
+  [1m[35m (22.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "customers"[0m
+  ↳ app/views/staff/customers/index.html.erb:9
+  [1m[36mCustomer Load (3.1ms)[0m  [1m[34mSELECT "customers".* FROM "customers" ORDER BY "customers"."family_name_kana" ASC, "customers"."given_name_kana" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/staff/customers/index.html.erb:20
+  Rendered staff/customers/index.html.erb within layouts/staff (Duration: 370.8ms | Allocations: 15628)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered staff/shared/_header.html.erb (Duration: 16.3ms | Allocations: 304)
+  Rendered shared/_footer.html.erb (Duration: 10.4ms | Allocations: 81)
+Completed 200 OK in 938ms (Views: 858.9ms | ActiveRecord: 32.4ms | Allocations: 21783)
+
+
+Started GET "/customers/51/edit" for 172.18.0.1 at 2020-04-20 05:25:16 +0000
+Processing by Staff::CustomersController#edit as HTML
+  Parameters: {"host"=>"baukis2.example.com", "id"=>"51"}
+  [1m[36mStaffMember Load (8.3ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  [1m[36mCustomer Load (6.6ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 51], ["LIMIT", 1]]
+  ↳ app/controllers/staff/customers_controller.rb:16:in `edit'
+  [1m[36mHomeAddress Load (5.5ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses" WHERE "addresses"."type" = $1 AND "addresses"."customer_id" = $2 LIMIT $3[0m  [["type", "HomeAddress"], ["customer_id", 51], ["LIMIT", 1]]
+  ↳ app/forms/staff/customer_form.rb:10:in `initialize'
+  [1m[36mWorkAddress Load (6.0ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses" WHERE "addresses"."type" = $1 AND "addresses"."customer_id" = $2 LIMIT $3[0m  [["type", "WorkAddress"], ["customer_id", 51], ["LIMIT", 1]]
+  ↳ app/forms/staff/customer_form.rb:11:in `initialize'
+  Rendering staff/customers/edit.html.erb within layouts/staff
+  Rendered staff/customers/_customer_fields.html.erb (Duration: 19.8ms | Allocations: 3358)
+  Rendered staff/customers/_home_address_fields.html.erb (Duration: 712.5ms | Allocations: 185838)
+  Rendered staff/customers/_form.html.erb (Duration: 765.5ms | Allocations: 189905)
+  Rendered staff/customers/edit.html.erb within layouts/staff (Duration: 792.4ms | Allocations: 190340)
+Completed 500 Internal Server Error in 863ms (ActiveRecord: 26.5ms | Allocations: 193766)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `q' for #<#<Class:0x0000563070a59fa0>:0x00005630718a06b8>):
+     7:             m << q.text_field_block(:city, "市区町村", size: 16)
+     8:             m << q.text_field_block(:address1, "町域、番地等", size: 40)
+     9:         end
+    10:         m << q.text_field_block(:address2, "建物名、部屋番号名", size: 40)
+    11:     end %>
+    12: <% end %>
+  
+app/views/staff/customers/_home_address_fields.html.erb:10
+app/lib/html_builder.rb:10:in `block in markup'
+app/lib/html_builder.rb:4:in `markup'
+app/views/staff/customers/_home_address_fields.html.erb:2
+app/views/staff/customers/_home_address_fields.html.erb:1
+app/views/staff/customers/_form.html.erb:8
+app/views/staff/customers/edit.html.erb:7
+app/views/staff/customers/edit.html.erb:5
+Started GET "/customers" for 172.18.0.1 at 2020-04-20 05:26:13 +0000
+Processing by Staff::CustomersController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (0.6ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  Rendering staff/customers/index.html.erb within layouts/staff
+  [1m[35m (5.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "customers"[0m
+  ↳ app/views/staff/customers/index.html.erb:9
+  [1m[36mCustomer Load (8.7ms)[0m  [1m[34mSELECT "customers".* FROM "customers" ORDER BY "customers"."family_name_kana" ASC, "customers"."given_name_kana" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/staff/customers/index.html.erb:20
+  Rendered staff/customers/index.html.erb within layouts/staff (Duration: 322.2ms | Allocations: 15631)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered staff/shared/_header.html.erb (Duration: 6.7ms | Allocations: 304)
+  Rendered shared/_footer.html.erb (Duration: 4.9ms | Allocations: 81)
+Completed 200 OK in 738ms (Views: 691.1ms | ActiveRecord: 15.2ms | Allocations: 21810)
+
+
+Started GET "/customers/51/edit" for 172.18.0.1 at 2020-04-20 05:26:17 +0000
+Processing by Staff::CustomersController#edit as HTML
+  Parameters: {"host"=>"baukis2.example.com", "id"=>"51"}
+  [1m[36mStaffMember Load (1.6ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  [1m[36mCustomer Load (7.2ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 51], ["LIMIT", 1]]
+  ↳ app/controllers/staff/customers_controller.rb:16:in `edit'
+  [1m[36mHomeAddress Load (3.7ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses" WHERE "addresses"."type" = $1 AND "addresses"."customer_id" = $2 LIMIT $3[0m  [["type", "HomeAddress"], ["customer_id", 51], ["LIMIT", 1]]
+  ↳ app/forms/staff/customer_form.rb:10:in `initialize'
+  [1m[36mWorkAddress Load (2.1ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses" WHERE "addresses"."type" = $1 AND "addresses"."customer_id" = $2 LIMIT $3[0m  [["type", "WorkAddress"], ["customer_id", 51], ["LIMIT", 1]]
+  ↳ app/forms/staff/customer_form.rb:11:in `initialize'
+  Rendering staff/customers/edit.html.erb within layouts/staff
+  Rendered staff/customers/_customer_fields.html.erb (Duration: 12.7ms | Allocations: 3358)
+  Rendered staff/customers/_home_address_fields.html.erb (Duration: 559.0ms | Allocations: 183002)
+  Rendered staff/customers/_form.html.erb (Duration: 600.3ms | Allocations: 187069)
+  Rendered staff/customers/edit.html.erb within layouts/staff (Duration: 622.5ms | Allocations: 187504)
+Completed 500 Internal Server Error in 674ms (ActiveRecord: 14.6ms | Allocations: 190930)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `q' for #<#<Class:0x000056307178b228>:0x0000563071e39d68>):
+     7:             m << q.text_field_block(:city, "市区町村", size: 16)
+     8:             m << q.text_field_block(:address1, "町域、番地等", size: 40)
+     9:         end
+    10:         m << q.text_field_block(:address2, "建物名、部屋番号名", size: 40)
+    11:     end %>
+    12: <% end %>
+  
+app/views/staff/customers/_home_address_fields.html.erb:10
+app/lib/html_builder.rb:10:in `block in markup'
+app/lib/html_builder.rb:4:in `markup'
+app/views/staff/customers/_home_address_fields.html.erb:2
+app/views/staff/customers/_home_address_fields.html.erb:1
+app/views/staff/customers/_form.html.erb:8
+app/views/staff/customers/edit.html.erb:7
+app/views/staff/customers/edit.html.erb:5
+Started GET "/customers" for 172.18.0.1 at 2020-04-20 05:26:28 +0000
+Processing by Staff::CustomersController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (1.0ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  Rendering staff/customers/index.html.erb within layouts/staff
+  [1m[35m (9.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "customers"[0m
+  ↳ app/views/staff/customers/index.html.erb:9
+  [1m[36mCustomer Load (6.7ms)[0m  [1m[34mSELECT "customers".* FROM "customers" ORDER BY "customers"."family_name_kana" ASC, "customers"."given_name_kana" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/staff/customers/index.html.erb:20
+  Rendered staff/customers/index.html.erb within layouts/staff (Duration: 342.9ms | Allocations: 15635)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered staff/shared/_header.html.erb (Duration: 4.2ms | Allocations: 304)
+  Rendered shared/_footer.html.erb (Duration: 9.9ms | Allocations: 81)
+Completed 200 OK in 741ms (Views: 682.0ms | ActiveRecord: 17.0ms | Allocations: 21814)
+
+
+Started GET "/customers/51/edit" for 172.18.0.1 at 2020-04-20 05:26:31 +0000
+Processing by Staff::CustomersController#edit as HTML
+  Parameters: {"host"=>"baukis2.example.com", "id"=>"51"}
+  [1m[36mStaffMember Load (1.0ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  [1m[36mCustomer Load (7.1ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 51], ["LIMIT", 1]]
+  ↳ app/controllers/staff/customers_controller.rb:16:in `edit'
+  [1m[36mHomeAddress Load (2.2ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses" WHERE "addresses"."type" = $1 AND "addresses"."customer_id" = $2 LIMIT $3[0m  [["type", "HomeAddress"], ["customer_id", 51], ["LIMIT", 1]]
+  ↳ app/forms/staff/customer_form.rb:10:in `initialize'
+  [1m[36mWorkAddress Load (1.6ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses" WHERE "addresses"."type" = $1 AND "addresses"."customer_id" = $2 LIMIT $3[0m  [["type", "WorkAddress"], ["customer_id", 51], ["LIMIT", 1]]
+  ↳ app/forms/staff/customer_form.rb:11:in `initialize'
+  Rendering staff/customers/edit.html.erb within layouts/staff
+  Rendered staff/customers/_customer_fields.html.erb (Duration: 21.4ms | Allocations: 3357)
+  Rendered staff/customers/_home_address_fields.html.erb (Duration: 16.1ms | Allocations: 3557)
+  Rendered staff/customers/_work_address_fields.html.erb (Duration: 1015.9ms | Allocations: 266513)
+  Rendered staff/customers/_form.html.erb (Duration: 1109.1ms | Allocations: 274344)
+  Rendered staff/customers/edit.html.erb within layouts/staff (Duration: 1139.8ms | Allocations: 274779)
+Completed 500 Internal Server Error in 1200ms (ActiveRecord: 11.9ms | Allocations: 278188)
+
+
+  
+ActionView::Template::Error (undefined method `strip' for #<AddressFormPresenter:0x0000563071d89300>):
+    1: <%= f.fields_for :work_address, f.object.customer.work_address do |ff| %>
+    2:     <%= markup do |m|
+    3:         m << p = AddressFormPresenter.new(ff, self)
+    4:         m << p.text_field_block(:company_name, "会社名", size: 40, required: true)
+    5:         m << p.text_field_block(:company_name, "部署名", size: 40)
+    6:         m << p.postal_code_block(:company_name, "郵便番号", size: 7)
+  
+app/views/staff/customers/_work_address_fields.html.erb:3
+app/lib/html_builder.rb:10:in `block in markup'
+app/lib/html_builder.rb:4:in `markup'
+app/views/staff/customers/_work_address_fields.html.erb:2
+app/views/staff/customers/_work_address_fields.html.erb:1
+app/views/staff/customers/_form.html.erb:12
+app/views/staff/customers/edit.html.erb:7
+app/views/staff/customers/edit.html.erb:5
+Started GET "/customers" for 172.18.0.1 at 2020-04-20 05:27:05 +0000
+Processing by Staff::CustomersController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (0.8ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  Rendering staff/customers/index.html.erb within layouts/staff
+  [1m[35m (6.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "customers"[0m
+  ↳ app/views/staff/customers/index.html.erb:9
+  [1m[36mCustomer Load (4.9ms)[0m  [1m[34mSELECT "customers".* FROM "customers" ORDER BY "customers"."family_name_kana" ASC, "customers"."given_name_kana" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/staff/customers/index.html.erb:20
+  Rendered staff/customers/index.html.erb within layouts/staff (Duration: 385.0ms | Allocations: 15628)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered staff/shared/_header.html.erb (Duration: 12.9ms | Allocations: 304)
+  Rendered shared/_footer.html.erb (Duration: 5.7ms | Allocations: 81)
+Completed 200 OK in 883ms (Views: 824.8ms | ActiveRecord: 12.2ms | Allocations: 21773)
+
+
+Started GET "/customers/51/edit" for 172.18.0.1 at 2020-04-20 05:27:07 +0000
+Processing by Staff::CustomersController#edit as HTML
+  Parameters: {"host"=>"baukis2.example.com", "id"=>"51"}
+  [1m[36mStaffMember Load (3.4ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  [1m[36mCustomer Load (6.6ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 51], ["LIMIT", 1]]
+  ↳ app/controllers/staff/customers_controller.rb:16:in `edit'
+  [1m[36mHomeAddress Load (1.7ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses" WHERE "addresses"."type" = $1 AND "addresses"."customer_id" = $2 LIMIT $3[0m  [["type", "HomeAddress"], ["customer_id", 51], ["LIMIT", 1]]
+  ↳ app/forms/staff/customer_form.rb:10:in `initialize'
+  [1m[36mWorkAddress Load (1.4ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses" WHERE "addresses"."type" = $1 AND "addresses"."customer_id" = $2 LIMIT $3[0m  [["type", "WorkAddress"], ["customer_id", 51], ["LIMIT", 1]]
+  ↳ app/forms/staff/customer_form.rb:11:in `initialize'
+  Rendering staff/customers/edit.html.erb within layouts/staff
+  Rendered staff/customers/_customer_fields.html.erb (Duration: 11.9ms | Allocations: 3358)
+  Rendered staff/customers/_home_address_fields.html.erb (Duration: 23.1ms | Allocations: 3556)
+  Rendered staff/customers/_work_address_fields.html.erb (Duration: 602.3ms | Allocations: 181704)
+  Rendered staff/customers/_form.html.erb (Duration: 679.9ms | Allocations: 189533)
+  Rendered staff/customers/edit.html.erb within layouts/staff (Duration: 697.5ms | Allocations: 189968)
+Completed 500 Internal Server Error in 769ms (ActiveRecord: 13.2ms | Allocations: 193391)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `q' for #<#<Class:0x0000563070b97638>:0x0000563071b5b1a0>):
+    4:         m << p.text_field_block(:company_name, "会社名", size: 40, required: true)
+    5:         m << p.text_field_block(:company_name, "部署名", size: 40)
+    6:         m << p.postal_code_block(:company_name, "郵便番号", size: 7)
+    7:         m << q.drop_down_list_block(:prefecture, "都道府県", address::PREFECTURE_NAMES)
+    8:         m << q.text_field_block(:city, "市区町村", size: 16)
+    9:         m << q.text_field_block(:address1, "町域、番地等", size: 40)
+   10:         m << q.text_field_block(:address2, "建物名、部屋番号名", size: 40)
+  
+app/views/staff/customers/_work_address_fields.html.erb:7
+app/lib/html_builder.rb:10:in `block in markup'
+app/lib/html_builder.rb:4:in `markup'
+app/views/staff/customers/_work_address_fields.html.erb:2
+app/views/staff/customers/_work_address_fields.html.erb:1
+app/views/staff/customers/_form.html.erb:12
+app/views/staff/customers/edit.html.erb:7
+app/views/staff/customers/edit.html.erb:5
+Started GET "/customers" for 172.18.0.1 at 2020-04-20 05:27:28 +0000
+Processing by Staff::CustomersController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (0.7ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  Rendering staff/customers/index.html.erb within layouts/staff
+  [1m[35m (10.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "customers"[0m
+  ↳ app/views/staff/customers/index.html.erb:9
+  [1m[36mCustomer Load (1.9ms)[0m  [1m[34mSELECT "customers".* FROM "customers" ORDER BY "customers"."family_name_kana" ASC, "customers"."given_name_kana" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/staff/customers/index.html.erb:20
+  Rendered staff/customers/index.html.erb within layouts/staff (Duration: 100.4ms | Allocations: 13053)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered staff/shared/_header.html.erb (Duration: 0.6ms | Allocations: 125)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 5)
+Completed 200 OK in 636ms (Views: 607.9ms | ActiveRecord: 13.2ms | Allocations: 17994)
+
+
+Started GET "/customers/51/edit" for 172.18.0.1 at 2020-04-20 05:27:30 +0000
+Processing by Staff::CustomersController#edit as HTML
+  Parameters: {"host"=>"baukis2.example.com", "id"=>"51"}
+  [1m[36mStaffMember Load (3.5ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  [1m[36mCustomer Load (3.2ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 51], ["LIMIT", 1]]
+  ↳ app/controllers/staff/customers_controller.rb:16:in `edit'
+  [1m[36mHomeAddress Load (3.6ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses" WHERE "addresses"."type" = $1 AND "addresses"."customer_id" = $2 LIMIT $3[0m  [["type", "HomeAddress"], ["customer_id", 51], ["LIMIT", 1]]
+  ↳ app/forms/staff/customer_form.rb:10:in `initialize'
+  [1m[36mWorkAddress Load (2.9ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses" WHERE "addresses"."type" = $1 AND "addresses"."customer_id" = $2 LIMIT $3[0m  [["type", "WorkAddress"], ["customer_id", 51], ["LIMIT", 1]]
+  ↳ app/forms/staff/customer_form.rb:11:in `initialize'
+  Rendering staff/customers/edit.html.erb within layouts/staff
+  Rendered staff/customers/_customer_fields.html.erb (Duration: 11.6ms | Allocations: 3195)
+  Rendered staff/customers/_home_address_fields.html.erb (Duration: 14.4ms | Allocations: 3394)
+Started GET "/customers/51/edit" for 172.18.0.1 at 2020-04-20 05:27:31 +0000
+  Rendered staff/customers/_work_address_fields.html.erb (Duration: 606.9ms | Allocations: 182384)
+  Rendered staff/customers/_form.html.erb (Duration: 642.3ms | Allocations: 189320)
+  Rendered staff/customers/edit.html.erb within layouts/staff (Duration: 646.0ms | Allocations: 189409)
+Completed 500 Internal Server Error in 727ms (ActiveRecord: 13.2ms | Allocations: 192967)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `q' for #<#<Class:0x0000563070b97638>:0x0000563072131ea8>):
+    4:         m << p.text_field_block(:company_name, "会社名", size: 40, required: true)
+    5:         m << p.text_field_block(:company_name, "部署名", size: 40)
+    6:         m << p.postal_code_block(:company_name, "郵便番号", size: 7)
+    7:         m << q.drop_down_list_block(:prefecture, "都道府県", address::PREFECTURE_NAMES)
+    8:         m << q.text_field_block(:city, "市区町村", size: 16)
+    9:         m << q.text_field_block(:address1, "町域、番地等", size: 40)
+   10:         m << q.text_field_block(:address2, "建物名、部屋番号名", size: 40)
+  
+app/views/staff/customers/_work_address_fields.html.erb:7
+app/lib/html_builder.rb:10:in `block in markup'
+app/lib/html_builder.rb:4:in `markup'
+app/views/staff/customers/_work_address_fields.html.erb:2
+app/views/staff/customers/_work_address_fields.html.erb:1
+app/views/staff/customers/_form.html.erb:12
+app/views/staff/customers/edit.html.erb:7
+app/views/staff/customers/edit.html.erb:5
+Processing by Staff::CustomersController#edit as HTML
+  Parameters: {"host"=>"baukis2.example.com", "id"=>"51"}
+  [1m[36mStaffMember Load (17.0ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  [1m[36mCustomer Load (14.2ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 51], ["LIMIT", 1]]
+  ↳ app/controllers/staff/customers_controller.rb:16:in `edit'
+  [1m[36mHomeAddress Load (16.1ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses" WHERE "addresses"."type" = $1 AND "addresses"."customer_id" = $2 LIMIT $3[0m  [["type", "HomeAddress"], ["customer_id", 51], ["LIMIT", 1]]
+  ↳ app/forms/staff/customer_form.rb:10:in `initialize'
+  [1m[36mWorkAddress Load (8.1ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses" WHERE "addresses"."type" = $1 AND "addresses"."customer_id" = $2 LIMIT $3[0m  [["type", "WorkAddress"], ["customer_id", 51], ["LIMIT", 1]]
+  ↳ app/forms/staff/customer_form.rb:11:in `initialize'
+  Rendering staff/customers/edit.html.erb within layouts/staff
+  Rendered staff/customers/_customer_fields.html.erb (Duration: 25.9ms | Allocations: 3195)
+  Rendered staff/customers/_home_address_fields.html.erb (Duration: 12.5ms | Allocations: 3394)
+  Rendered staff/customers/_work_address_fields.html.erb (Duration: 607.2ms | Allocations: 182777)
+  Rendered staff/customers/_form.html.erb (Duration: 666.8ms | Allocations: 195898)
+  Rendered staff/customers/edit.html.erb within layouts/staff (Duration: 669.8ms | Allocations: 195987)
+Completed 500 Internal Server Error in 818ms (ActiveRecord: 58.8ms | Allocations: 207804)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `q' for #<#<Class:0x0000563070b97638>:0x0000563071b9a328>):
+    4:         m << p.text_field_block(:company_name, "会社名", size: 40, required: true)
+    5:         m << p.text_field_block(:company_name, "部署名", size: 40)
+    6:         m << p.postal_code_block(:company_name, "郵便番号", size: 7)
+    7:         m << q.drop_down_list_block(:prefecture, "都道府県", address::PREFECTURE_NAMES)
+    8:         m << q.text_field_block(:city, "市区町村", size: 16)
+    9:         m << q.text_field_block(:address1, "町域、番地等", size: 40)
+   10:         m << q.text_field_block(:address2, "建物名、部屋番号名", size: 40)
+  
+app/views/staff/customers/_work_address_fields.html.erb:7
+app/lib/html_builder.rb:10:in `block in markup'
+app/lib/html_builder.rb:4:in `markup'
+app/views/staff/customers/_work_address_fields.html.erb:2
+app/views/staff/customers/_work_address_fields.html.erb:1
+app/views/staff/customers/_form.html.erb:12
+app/views/staff/customers/edit.html.erb:7
+app/views/staff/customers/edit.html.erb:5
+Started GET "/customers/51/edit" for 172.18.0.1 at 2020-04-20 05:27:43 +0000
+Processing by Staff::CustomersController#edit as HTML
+  Parameters: {"host"=>"baukis2.example.com", "id"=>"51"}
+  [1m[36mStaffMember Load (11.6ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  [1m[36mCustomer Load (7.5ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 51], ["LIMIT", 1]]
+  ↳ app/controllers/staff/customers_controller.rb:16:in `edit'
+  [1m[36mHomeAddress Load (8.7ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses" WHERE "addresses"."type" = $1 AND "addresses"."customer_id" = $2 LIMIT $3[0m  [["type", "HomeAddress"], ["customer_id", 51], ["LIMIT", 1]]
+  ↳ app/forms/staff/customer_form.rb:10:in `initialize'
+  [1m[36mWorkAddress Load (14.0ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses" WHERE "addresses"."type" = $1 AND "addresses"."customer_id" = $2 LIMIT $3[0m  [["type", "WorkAddress"], ["customer_id", 51], ["LIMIT", 1]]
+  ↳ app/forms/staff/customer_form.rb:11:in `initialize'
+  Rendering staff/customers/edit.html.erb within layouts/staff
+  Rendered staff/customers/_customer_fields.html.erb (Duration: 24.9ms | Allocations: 3357)
+  Rendered staff/customers/_home_address_fields.html.erb (Duration: 30.0ms | Allocations: 3555)
+  Rendered staff/customers/_work_address_fields.html.erb (Duration: 860.1ms | Allocations: 182189)
+Started GET "/customers" for 172.18.0.1 at 2020-04-20 05:27:45 +0000
+  Rendered staff/customers/_form.html.erb (Duration: 1019.3ms | Allocations: 190226)
+  Rendered staff/customers/edit.html.erb within layouts/staff (Duration: 1077.5ms | Allocations: 190734)
+Completed 500 Internal Server Error in 1241ms (ActiveRecord: 41.8ms | Allocations: 194466)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `address' for #<#<Class:0x0000563071d43058>:0x0000563071d41410>):
+    4:         m << p.text_field_block(:company_name, "会社名", size: 40, repuired: true)
+    5:         m << p.text_field_block(:company_name, "部署名", size: 40)
+    6:         m << p.postal_code_block(:company_name, "郵便番号", size: 7)
+    7:         m << p.drop_down_list_block(:prefecture, "都道府県", address::PREFECTURE_NAMES)
+    8:         m << p.text_field_block(:city, "市区町村", size: 16)
+    9:         m << p.text_field_block(:address1, "町域、番地等", size: 40)
+   10:         m << p.text_field_block(:address2, "建物名、部屋番号名", size: 40)
+  
+app/views/staff/customers/_work_address_fields.html.erb:7
+app/lib/html_builder.rb:10:in `block in markup'
+app/lib/html_builder.rb:4:in `markup'
+app/views/staff/customers/_work_address_fields.html.erb:2
+app/views/staff/customers/_work_address_fields.html.erb:1
+app/views/staff/customers/_form.html.erb:12
+app/views/staff/customers/edit.html.erb:7
+app/views/staff/customers/edit.html.erb:5
+Processing by Staff::CustomersController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (213.8ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  Rendering staff/customers/index.html.erb within layouts/staff
+  [1m[35m (95.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "customers"[0m
+  ↳ app/views/staff/customers/index.html.erb:9
+  [1m[36mCustomer Load (2.3ms)[0m  [1m[34mSELECT "customers".* FROM "customers" ORDER BY "customers"."family_name_kana" ASC, "customers"."given_name_kana" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/staff/customers/index.html.erb:20
+  Rendered staff/customers/index.html.erb within layouts/staff (Duration: 999.0ms | Allocations: 184429)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered staff/shared/_header.html.erb (Duration: 7.9ms | Allocations: 304)
+  Rendered shared/_footer.html.erb (Duration: 6.1ms | Allocations: 81)
+Completed 200 OK in 2338ms (Views: 1605.8ms | ActiveRecord: 311.6ms | Allocations: 536639)
+
+
+Started GET "/customers/51/edit" for 172.18.0.1 at 2020-04-20 05:28:03 +0000
+Processing by Staff::CustomersController#edit as HTML
+  Parameters: {"host"=>"baukis2.example.com", "id"=>"51"}
+  [1m[36mStaffMember Load (1.3ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  [1m[36mCustomer Load (3.0ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 51], ["LIMIT", 1]]
+  ↳ app/controllers/staff/customers_controller.rb:16:in `edit'
+  [1m[36mHomeAddress Load (3.2ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses" WHERE "addresses"."type" = $1 AND "addresses"."customer_id" = $2 LIMIT $3[0m  [["type", "HomeAddress"], ["customer_id", 51], ["LIMIT", 1]]
+  ↳ app/forms/staff/customer_form.rb:10:in `initialize'
+  [1m[36mWorkAddress Load (3.4ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses" WHERE "addresses"."type" = $1 AND "addresses"."customer_id" = $2 LIMIT $3[0m  [["type", "WorkAddress"], ["customer_id", 51], ["LIMIT", 1]]
+  ↳ app/forms/staff/customer_form.rb:11:in `initialize'
+  Rendering staff/customers/edit.html.erb within layouts/staff
+  Rendered staff/customers/_customer_fields.html.erb (Duration: 80.4ms | Allocations: 3197)
+  Rendered staff/customers/_home_address_fields.html.erb (Duration: 17.0ms | Allocations: 3395)
+  Rendered staff/customers/_work_address_fields.html.erb (Duration: 926.5ms | Allocations: 181533)
+  Rendered staff/customers/_form.html.erb (Duration: 1033.8ms | Allocations: 188469)
+  Rendered staff/customers/edit.html.erb within layouts/staff (Duration: 1035.9ms | Allocations: 188558)
+Completed 500 Internal Server Error in 1107ms (ActiveRecord: 10.9ms | Allocations: 191839)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `address' for #<#<Class:0x0000563071d43058>:0x00005630722f6040>):
+    4:         m << p.text_field_block(:company_name, "会社名", size: 40, repuired: true)
+    5:         m << p.text_field_block(:company_name, "部署名", size: 40)
+    6:         m << p.postal_code_block(:company_name, "郵便番号", size: 7)
+    7:         m << p.drop_down_list_block(:prefecture, "都道府県", address::PREFECTURE_NAMES)
+    8:         m << p.text_field_block(:city, "市区町村", size: 16)
+    9:         m << p.text_field_block(:address1, "町域、番地等", size: 40)
+   10:         m << p.text_field_block(:address2, "建物名、部屋番号名", size: 40)
+  
+app/views/staff/customers/_work_address_fields.html.erb:7
+app/lib/html_builder.rb:10:in `block in markup'
+app/lib/html_builder.rb:4:in `markup'
+app/views/staff/customers/_work_address_fields.html.erb:2
+app/views/staff/customers/_work_address_fields.html.erb:1
+app/views/staff/customers/_form.html.erb:12
+app/views/staff/customers/edit.html.erb:7
+app/views/staff/customers/edit.html.erb:5
+Started GET "/customers" for 172.18.0.1 at 2020-04-20 05:29:27 +0000
+Processing by Staff::CustomersController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (0.9ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  Rendering staff/customers/index.html.erb within layouts/staff
+  [1m[35m (10.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "customers"[0m
+  ↳ app/views/staff/customers/index.html.erb:9
+  [1m[36mCustomer Load (0.6ms)[0m  [1m[34mSELECT "customers".* FROM "customers" ORDER BY "customers"."family_name_kana" ASC, "customers"."given_name_kana" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/staff/customers/index.html.erb:20
+  Rendered staff/customers/index.html.erb within layouts/staff (Duration: 464.6ms | Allocations: 15631)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered staff/shared/_header.html.erb (Duration: 28.2ms | Allocations: 304)
+  Rendered shared/_footer.html.erb (Duration: 30.0ms | Allocations: 81)
+Completed 200 OK in 1028ms (Views: 974.4ms | ActiveRecord: 11.7ms | Allocations: 21789)
+
+
+Started GET "/customers/51/edit" for 172.18.0.1 at 2020-04-20 05:30:08 +0000
+Processing by Staff::CustomersController#edit as HTML
+  Parameters: {"host"=>"baukis2.example.com", "id"=>"51"}
+  [1m[36mStaffMember Load (1.0ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  [1m[36mCustomer Load (2.4ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 51], ["LIMIT", 1]]
+  ↳ app/controllers/staff/customers_controller.rb:16:in `edit'
+  [1m[36mHomeAddress Load (2.9ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses" WHERE "addresses"."type" = $1 AND "addresses"."customer_id" = $2 LIMIT $3[0m  [["type", "HomeAddress"], ["customer_id", 51], ["LIMIT", 1]]
+  ↳ app/forms/staff/customer_form.rb:10:in `initialize'
+  [1m[36mWorkAddress Load (2.4ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses" WHERE "addresses"."type" = $1 AND "addresses"."customer_id" = $2 LIMIT $3[0m  [["type", "WorkAddress"], ["customer_id", 51], ["LIMIT", 1]]
+  ↳ app/forms/staff/customer_form.rb:11:in `initialize'
+  Rendering staff/customers/edit.html.erb within layouts/staff
+  Rendered staff/customers/_customer_fields.html.erb (Duration: 21.0ms | Allocations: 3357)
+  Rendered staff/customers/_home_address_fields.html.erb (Duration: 15.6ms | Allocations: 3555)
+  Rendered staff/customers/_work_address_fields.html.erb (Duration: 18.2ms | Allocations: 4460)
+  Rendered staff/customers/_form.html.erb (Duration: 116.8ms | Allocations: 12286)
+  Rendered staff/customers/edit.html.erb within layouts/staff (Duration: 151.6ms | Allocations: 12983)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered staff/shared/_header.html.erb (Duration: 0.3ms | Allocations: 124)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 5)
+Completed 200 OK in 580ms (Views: 528.6ms | ActiveRecord: 8.7ms | Allocations: 20236)
+
+
+Started PATCH "/customers/51" for 172.18.0.1 at 2020-04-20 05:30:16 +0000
+  
+AbstractController::ActionNotFound (The action 'update' could not be found for Staff::CustomersController):
+  
+actionpack (6.0.2.2) lib/abstract_controller/base.rb:131:in `process'
+actionview (6.0.2.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.2.2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.2.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.2.2) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.2.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/customers" for 172.18.0.1 at 2020-04-20 05:30:23 +0000
+Processing by Staff::CustomersController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (0.6ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  Rendering staff/customers/index.html.erb within layouts/staff
+  [1m[35m (5.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "customers"[0m
+  ↳ app/views/staff/customers/index.html.erb:9
+  [1m[36mCustomer Load (0.8ms)[0m  [1m[34mSELECT "customers".* FROM "customers" ORDER BY "customers"."family_name_kana" ASC, "customers"."given_name_kana" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/staff/customers/index.html.erb:20
+  Rendered staff/customers/index.html.erb within layouts/staff (Duration: 48.8ms | Allocations: 13044)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered staff/shared/_header.html.erb (Duration: 0.3ms | Allocations: 121)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 619ms (Views: 602.5ms | ActiveRecord: 6.3ms | Allocations: 17972)
+
+
+Started GET "/customers/new" for 172.18.0.1 at 2020-04-20 05:30:26 +0000
+Processing by Staff::CustomersController#new as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (1.7ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  Rendering staff/customers/new.html.erb within layouts/staff
+  Rendered staff/customers/_customer_fields.html.erb (Duration: 9.6ms | Allocations: 3609)
+  Rendered staff/customers/_home_address_fields.html.erb (Duration: 13.1ms | Allocations: 3348)
+  Rendered staff/customers/_work_address_fields.html.erb (Duration: 17.6ms | Allocations: 4259)
+  Rendered staff/customers/_form.html.erb (Duration: 52.9ms | Allocations: 11558)
+  Rendered staff/customers/new.html.erb within layouts/staff (Duration: 64.1ms | Allocations: 12031)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered staff/shared/_header.html.erb (Duration: 0.4ms | Allocations: 124)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 426ms (Views: 400.3ms | ActiveRecord: 1.7ms | Allocations: 17663)
+
+
+Started POST "/customers" for 172.18.0.1 at 2020-04-20 05:31:26 +0000
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for Staff::CustomersController):
+  
+actionpack (6.0.2.2) lib/abstract_controller/base.rb:131:in `process'
+actionview (6.0.2.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.2.2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.2.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.2.2) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.2.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/customers" for 172.18.0.1 at 2020-04-20 05:31:30 +0000
+Processing by Staff::CustomersController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (0.9ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  Rendering staff/customers/index.html.erb within layouts/staff
+  [1m[35m (5.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "customers"[0m
+  ↳ app/views/staff/customers/index.html.erb:9
+  [1m[36mCustomer Load (0.9ms)[0m  [1m[34mSELECT "customers".* FROM "customers" ORDER BY "customers"."family_name_kana" ASC, "customers"."given_name_kana" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/staff/customers/index.html.erb:20
+  Rendered staff/customers/index.html.erb within layouts/staff (Duration: 66.0ms | Allocations: 13048)
+[Webpacker] Everything's up-to-date. Nothing to do
+Started GET "/" for 172.18.0.1 at 2020-04-20 05:31:31 +0000
+  Rendered staff/shared/_header.html.erb (Duration: 0.5ms | Allocations: 121)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 551ms (Views: 533.6ms | ActiveRecord: 6.9ms | Allocations: 18832)
+
+
+Processing by Staff::TopController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (5.3ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  Rendering staff/top/dashboard.html.erb within layouts/staff
+  Rendered staff/top/dashboard.html.erb within layouts/staff (Duration: 13.8ms | Allocations: 174)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered staff/shared/_header.html.erb (Duration: 0.3ms | Allocations: 125)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 311ms (Views: 289.5ms | ActiveRecord: 5.3ms | Allocations: 5403)
+
+
+Started GET "/customers" for 172.18.0.1 at 2020-04-20 05:31:32 +0000
+Processing by Staff::CustomersController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (8.7ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  Rendering staff/customers/index.html.erb within layouts/staff
+  [1m[35m (7.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "customers"[0m
+  ↳ app/views/staff/customers/index.html.erb:9
+  [1m[36mCustomer Load (6.7ms)[0m  [1m[34mSELECT "customers".* FROM "customers" ORDER BY "customers"."family_name_kana" ASC, "customers"."given_name_kana" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/staff/customers/index.html.erb:20
+  Rendered staff/customers/index.html.erb within layouts/staff (Duration: 56.3ms | Allocations: 13059)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered staff/shared/_header.html.erb (Duration: 0.3ms | Allocations: 125)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 379ms (Views: 349.1ms | ActiveRecord: 22.9ms | Allocations: 17995)
+
+
+Started GET "/customers" for 172.18.0.1 at 2020-04-20 05:32:19 +0000
+Processing by Staff::CustomersController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (17.4ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  Rendering staff/customers/index.html.erb within layouts/staff
+  [1m[35m (13.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "customers"[0m
+  ↳ app/views/staff/customers/index.html.erb:9
+  [1m[36mCustomer Load (4.5ms)[0m  [1m[34mSELECT "customers".* FROM "customers" ORDER BY "customers"."family_name_kana" ASC, "customers"."given_name_kana" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/staff/customers/index.html.erb:20
+  Rendered staff/customers/index.html.erb within layouts/staff (Duration: 314.9ms | Allocations: 15628)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered staff/shared/_header.html.erb (Duration: 16.0ms | Allocations: 304)
+  Rendered shared/_footer.html.erb (Duration: 12.4ms | Allocations: 81)
+Completed 200 OK in 1034ms (Views: 901.8ms | ActiveRecord: 35.0ms | Allocations: 21780)
+
+
+Started GET "/customers?page=5" for 172.18.0.1 at 2020-04-20 05:32:28 +0000
+Processing by Staff::CustomersController#index as HTML
+  Parameters: {"page"=>"5", "host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (7.5ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  Rendering staff/customers/index.html.erb within layouts/staff
+  [1m[35m (6.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "customers"[0m
+  ↳ app/views/staff/customers/index.html.erb:9
+  [1m[36mCustomer Load (6.6ms)[0m  [1m[34mSELECT "customers".* FROM "customers" ORDER BY "customers"."family_name_kana" ASC, "customers"."given_name_kana" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 40]]
+  ↳ app/views/staff/customers/index.html.erb:20
+  Rendered staff/customers/index.html.erb within layouts/staff (Duration: 109.6ms | Allocations: 15353)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered staff/shared/_header.html.erb (Duration: 0.6ms | Allocations: 125)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 889ms (Views: 849.0ms | ActiveRecord: 21.0ms | Allocations: 20292)
+
+
+Started GET "/customers/11/edit" for 172.18.0.1 at 2020-04-20 05:35:20 +0000
+Processing by Staff::CustomersController#edit as HTML
+  Parameters: {"host"=>"baukis2.example.com", "id"=>"11"}
+  [1m[36mStaffMember Load (1.6ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  [1m[36mCustomer Load (26.8ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/staff/customers_controller.rb:16:in `edit'
+  [1m[36mHomeAddress Load (7.5ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses" WHERE "addresses"."type" = $1 AND "addresses"."customer_id" = $2 LIMIT $3[0m  [["type", "HomeAddress"], ["customer_id", 11], ["LIMIT", 1]]
+  ↳ app/forms/staff/customer_form.rb:10:in `initialize'
+  [1m[36mWorkAddress Load (9.0ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses" WHERE "addresses"."type" = $1 AND "addresses"."customer_id" = $2 LIMIT $3[0m  [["type", "WorkAddress"], ["customer_id", 11], ["LIMIT", 1]]
+  ↳ app/forms/staff/customer_form.rb:11:in `initialize'
+  Rendering staff/customers/edit.html.erb within layouts/staff
+  Rendered staff/customers/_customer_fields.html.erb (Duration: 20.8ms | Allocations: 3359)
+  Rendered staff/customers/_home_address_fields.html.erb (Duration: 21.8ms | Allocations: 3556)
+  Rendered staff/customers/_work_address_fields.html.erb (Duration: 29.6ms | Allocations: 4454)
+  Rendered staff/customers/_form.html.erb (Duration: 139.6ms | Allocations: 12282)
+  Rendered staff/customers/edit.html.erb within layouts/staff (Duration: 175.8ms | Allocations: 12971)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered staff/shared/_header.html.erb (Duration: 20.4ms | Allocations: 303)
+  Rendered shared/_footer.html.erb (Duration: 9.8ms | Allocations: 81)
+Completed 200 OK in 820ms (Views: 680.7ms | ActiveRecord: 44.9ms | Allocations: 21288)
+
+
+Started GET "/" for 172.18.0.1 at 2020-04-20 05:35:29 +0000
+Processing by Staff::TopController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (1.6ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  Rendering staff/top/dashboard.html.erb within layouts/staff
+  Rendered staff/top/dashboard.html.erb within layouts/staff (Duration: 16.0ms | Allocations: 163)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered staff/shared/_header.html.erb (Duration: 0.4ms | Allocations: 125)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 717ms (Views: 683.8ms | ActiveRecord: 1.6ms | Allocations: 5379)
+
+
+Started GET "/customers" for 172.18.0.1 at 2020-04-20 05:35:31 +0000
+Processing by Staff::CustomersController#index as HTML
+  Parameters: {"host"=>"baukis2.example.com"}
+  [1m[36mStaffMember Load (0.7ms)[0m  [1m[34mSELECT "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/staff/base.rb:9:in `current_staff_member'
+  Rendering staff/customers/index.html.erb within layouts/staff
+  [1m[35m (5.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "customers"[0m
+  ↳ app/views/staff/customers/index.html.erb:9
+  [1m[36mCustomer Load (3.8ms)[0m  [1m[34mSELECT "customers".* FROM "customers" ORDER BY "customers"."family_name_kana" ASC, "customers"."given_name_kana" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/staff/customers/index.html.erb:20
+  Rendered staff/customers/index.html.erb within layouts/staff (Duration: 325.5ms | Allocations: 15630)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered staff/shared/_header.html.erb (Duration: 0.6ms | Allocations: 125)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 860ms (Views: 818.2ms | ActiveRecord: 9.7ms | Allocations: 20700)
+
+
